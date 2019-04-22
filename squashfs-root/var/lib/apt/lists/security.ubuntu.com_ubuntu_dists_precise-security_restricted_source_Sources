@@ -1,0 +1,348 @@
+Package: nvidia-graphics-drivers
+Binary: nvidia-current, nvidia-current-dev
+Version: 304.88-0ubuntu0.0.2
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 6.0.7~), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, cdbs, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64 lpia
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers
+Files:
+ e3a22b99aebb533931662d43b322eb8f 2176 nvidia-graphics-drivers_304.88-0ubuntu0.0.2.dsc
+ 80795cf6bc85162fee637f17a792717c 77826624 nvidia-graphics-drivers_304.88.orig.tar.gz
+ ffffd3d8ac72a80414004d867c96beff 158888 nvidia-graphics-drivers_304.88-0ubuntu0.0.2.diff.gz
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Package-List:
+ nvidia-current deb restricted/misc optional
+ nvidia-current-dev deb restricted/misc optional
+Checksums-Sha1:
+ 48ea299b06e939278224495eb2df90be6a2a5652 2176 nvidia-graphics-drivers_304.88-0ubuntu0.0.2.dsc
+ ef49078597a2ac54d7feb4e466ff5e788e1e3472 77826624 nvidia-graphics-drivers_304.88.orig.tar.gz
+ 82b3a70af6660627d2fdc1ca06cb5db233f7957d 158888 nvidia-graphics-drivers_304.88-0ubuntu0.0.2.diff.gz
+Checksums-Sha256:
+ 784d7d0424f3ce231a6f87ab1ef5ac22d0efa7644e37fbefaaf11590ad01e544 2176 nvidia-graphics-drivers_304.88-0ubuntu0.0.2.dsc
+ a97681cbe67c618fbf51bec968d10b8f2d0430077f9a2715a407e66b57642775 77826624 nvidia-graphics-drivers_304.88.orig.tar.gz
+ 19419bb1f9189e02a8c4df2ee4905ea50411289d174eab44e3e9ea94fa9b07ca 158888 nvidia-graphics-drivers_304.88-0ubuntu0.0.2.diff.gz
+
+Package: nvidia-graphics-drivers-173
+Binary: nvidia-173, nvidia-173-dev
+Version: 173.14.35-0ubuntu0.2
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>> 4.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, cdbs, dh-modaliases
+Architecture: i386 amd64 lpia
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers-173
+Files:
+ f77204b5f5755d1d2c72eef7021bb484 2047 nvidia-graphics-drivers-173_173.14.35-0ubuntu0.2.dsc
+ 8987803e78faeaba76d8ac8f8583f0ac 32544097 nvidia-graphics-drivers-173_173.14.35.orig.tar.gz
+ bd38c9abfdf3fd869dbb2dd161e58cc8 39206 nvidia-graphics-drivers-173_173.14.35-0ubuntu0.2.diff.gz
+Package-List:
+ nvidia-173 deb restricted/misc optional
+ nvidia-173-dev deb restricted/misc optional
+Checksums-Sha1:
+ 84618df21e3a3f14d44d0c53e5888fc243403715 2047 nvidia-graphics-drivers-173_173.14.35-0ubuntu0.2.dsc
+ b277e3659612e17fa555d60f7e642ea78201c976 32544097 nvidia-graphics-drivers-173_173.14.35.orig.tar.gz
+ bd275461873690721a87b8f63b8f2f9236123d55 39206 nvidia-graphics-drivers-173_173.14.35-0ubuntu0.2.diff.gz
+Checksums-Sha256:
+ 6a3196788cebf8befb42d5c83cb394dbdf73ef1f1d9e3fa2644dd48966e4ebe0 2047 nvidia-graphics-drivers-173_173.14.35-0ubuntu0.2.dsc
+ 5901004eaa04aadc91c1bad95fbc31815e486ad5fb533d16286adef9bfe001e4 32544097 nvidia-graphics-drivers-173_173.14.35.orig.tar.gz
+ e0f2d693da6d60ef43d01151754a566919fb5dc9ddce650e1db6e0a987537a12 39206 nvidia-graphics-drivers-173_173.14.35-0ubuntu0.2.diff.gz
+
+Package: nvidia-graphics-drivers-173-updates
+Binary: nvidia-173-updates, nvidia-173-updates-dev
+Version: 173.14.35-0ubuntu0.2
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>> 4.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, cdbs, dh-modaliases
+Architecture: i386 amd64 lpia
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers-173-updates
+Files:
+ f62aab264f19325113c5b587c117d418 2135 nvidia-graphics-drivers-173-updates_173.14.35-0ubuntu0.2.dsc
+ 8987803e78faeaba76d8ac8f8583f0ac 32544097 nvidia-graphics-drivers-173-updates_173.14.35.orig.tar.gz
+ e4eea624bdf0ab06c00ef6c9bfd833a6 24735 nvidia-graphics-drivers-173-updates_173.14.35-0ubuntu0.2.diff.gz
+Package-List:
+ nvidia-173-updates deb restricted/misc optional
+ nvidia-173-updates-dev deb restricted/misc optional
+Checksums-Sha1:
+ 4b0a02b03758e856e92bcc6672fd351542ecf766 2135 nvidia-graphics-drivers-173-updates_173.14.35-0ubuntu0.2.dsc
+ b277e3659612e17fa555d60f7e642ea78201c976 32544097 nvidia-graphics-drivers-173-updates_173.14.35.orig.tar.gz
+ 1961ebd396be1a50cb407b1b34d811e6b0b490f9 24735 nvidia-graphics-drivers-173-updates_173.14.35-0ubuntu0.2.diff.gz
+Checksums-Sha256:
+ f628387f142a6f9886284d798380f165b965c5f321436979f41d8491ef91d805 2135 nvidia-graphics-drivers-173-updates_173.14.35-0ubuntu0.2.dsc
+ 5901004eaa04aadc91c1bad95fbc31815e486ad5fb533d16286adef9bfe001e4 32544097 nvidia-graphics-drivers-173-updates_173.14.35.orig.tar.gz
+ 9540b252a1ff4322e4a975df583d68ab1cf9f3f4801bd54f90724ba35cc0a1de 24735 nvidia-graphics-drivers-173-updates_173.14.35-0ubuntu0.2.diff.gz
+
+Package: nvidia-graphics-drivers-304
+Binary: nvidia-304, nvidia-304-dev, nvidia-current, nvidia-current-dev
+Version: 304.128-0ubuntu0.0.0.1
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 6.0.7~), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, cdbs, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers-304
+Files:
+ 6e1358064c8c4b8409057e085f719f4c 2316 nvidia-graphics-drivers-304_304.128-0ubuntu0.0.0.1.dsc
+ cf4010acaf34c7539a666ef72302fd94 79656218 nvidia-graphics-drivers-304_304.128.orig.tar.gz
+ 8ea1abad36d1de798cc13a36601d2dd3 145933 nvidia-graphics-drivers-304_304.128-0ubuntu0.0.0.1.diff.gz
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Package-List:
+ nvidia-304 deb restricted/misc optional
+ nvidia-304-dev deb restricted/misc optional
+ nvidia-current deb restricted/misc optional
+ nvidia-current-dev deb restricted/misc optional
+Checksums-Sha1:
+ 66455e6fc040f7a162ec343a34e5b9f8448e3c28 2316 nvidia-graphics-drivers-304_304.128-0ubuntu0.0.0.1.dsc
+ 49a06e5dbe66e41859eb0dc91eb79791654a8393 79656218 nvidia-graphics-drivers-304_304.128.orig.tar.gz
+ 8c08de229e38cd1fd3e1cfa5e6894dccb054ed4e 145933 nvidia-graphics-drivers-304_304.128-0ubuntu0.0.0.1.diff.gz
+Checksums-Sha256:
+ 71b89366d37722b38bc2d173e607cef624f87abfe43f0d89872b990686303af9 2316 nvidia-graphics-drivers-304_304.128-0ubuntu0.0.0.1.dsc
+ 246f82039b9e868639af50115c34d697734b67685a0fd0f18dbf284a978d429e 79656218 nvidia-graphics-drivers-304_304.128.orig.tar.gz
+ caa7ab9e3595156b303cf7b33dd09adb6f82f83f152756d8c2f24c2aeba549aa 145933 nvidia-graphics-drivers-304_304.128-0ubuntu0.0.0.1.diff.gz
+
+Package: nvidia-graphics-drivers-304-updates
+Binary: nvidia-304-updates, nvidia-304-updates-dev, nvidia-current-updates, nvidia-current-updates-dev, nvidia-experimental-304, nvidia-experimental-304-dev
+Version: 304.128-0ubuntu0.0.0.1
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 6.0.7~), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, cdbs, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers-304-updates
+Files:
+ 85a7b29cd61c40fcce86066738ac1b0e 2602 nvidia-graphics-drivers-304-updates_304.128-0ubuntu0.0.0.1.dsc
+ cf4010acaf34c7539a666ef72302fd94 79656218 nvidia-graphics-drivers-304-updates_304.128.orig.tar.gz
+ 571ee219f0c3e1a8e2b493a2e15d7ffe 147199 nvidia-graphics-drivers-304-updates_304.128-0ubuntu0.0.0.1.diff.gz
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Package-List:
+ nvidia-304-updates deb restricted/misc optional
+ nvidia-304-updates-dev deb restricted/misc optional
+ nvidia-current-updates deb restricted/misc optional
+ nvidia-current-updates-dev deb restricted/misc optional
+ nvidia-experimental-304 deb restricted/misc optional
+ nvidia-experimental-304-dev deb restricted/misc optional
+Checksums-Sha1:
+ 28e59073889af32fd5d944692dbf3d9e4ac035bd 2602 nvidia-graphics-drivers-304-updates_304.128-0ubuntu0.0.0.1.dsc
+ 49a06e5dbe66e41859eb0dc91eb79791654a8393 79656218 nvidia-graphics-drivers-304-updates_304.128.orig.tar.gz
+ 345f986bb99ae291d22bf3caafffd5aea2caf77b 147199 nvidia-graphics-drivers-304-updates_304.128-0ubuntu0.0.0.1.diff.gz
+Checksums-Sha256:
+ 5729a2a04894221a8a6b7c4f9411a805cc729927f308031a6d27a690c44ba854 2602 nvidia-graphics-drivers-304-updates_304.128-0ubuntu0.0.0.1.dsc
+ 246f82039b9e868639af50115c34d697734b67685a0fd0f18dbf284a978d429e 79656218 nvidia-graphics-drivers-304-updates_304.128.orig.tar.gz
+ e6955df2cb4610166aa44e63fd926eeb313a48ae41883b725b3281d7d808fda6 147199 nvidia-graphics-drivers-304-updates_304.128-0ubuntu0.0.0.1.diff.gz
+
+Package: nvidia-graphics-drivers-331
+Binary: nvidia-331, nvidia-331-dev, nvidia-331-uvm, nvidia-319, nvidia-319-dev
+Version: 331.113-0ubuntu0.0.0.3
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 6.0.7~), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, cdbs, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers-331
+Files:
+ 1e7b7ace717474466a4c9671cf0ea2b5 2361 nvidia-graphics-drivers-331_331.113-0ubuntu0.0.0.3.dsc
+ c4874bda002453f034b95375c62d5b62 89916522 nvidia-graphics-drivers-331_331.113.orig.tar.gz
+ 14d01ecc5234c4aa7a44986b2540b5d0 149719 nvidia-graphics-drivers-331_331.113-0ubuntu0.0.0.3.diff.gz
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Package-List:
+ nvidia-319 deb restricted/misc optional
+ nvidia-319-dev deb restricted/misc optional
+ nvidia-331 deb restricted/misc optional
+ nvidia-331-dev deb restricted/misc optional
+ nvidia-331-uvm deb restricted/misc optional
+Checksums-Sha1:
+ 8aa3dbdc24a24b16bff25971f92645db31ec43cc 2361 nvidia-graphics-drivers-331_331.113-0ubuntu0.0.0.3.dsc
+ f5cb4d503711599e5beb5a1b0bdfc40bf749c27d 89916522 nvidia-graphics-drivers-331_331.113.orig.tar.gz
+ 9e0bb57f304a5c9b6b1b3f2a2c1a90133aed4d6b 149719 nvidia-graphics-drivers-331_331.113-0ubuntu0.0.0.3.diff.gz
+Checksums-Sha256:
+ ac39782215ed96adc8d749c30c529409335113a3a2dbfa1e3618ffece4fc215e 2361 nvidia-graphics-drivers-331_331.113-0ubuntu0.0.0.3.dsc
+ 677f1056afe13fe0beeb3f3658ac21f73358640a48207a7ab9380784b27b5884 89916522 nvidia-graphics-drivers-331_331.113.orig.tar.gz
+ a6356c6dd088d8531a1376b2f8af04ba7355ffe7db9e55ad35283c5aa7900f6f 149719 nvidia-graphics-drivers-331_331.113-0ubuntu0.0.0.3.diff.gz
+
+Package: nvidia-graphics-drivers-331-updates
+Binary: nvidia-331-updates, nvidia-331-updates-dev, nvidia-331-updates-uvm, nvidia-319-updates, nvidia-319-updates-dev
+Version: 331.113-0ubuntu0.0.0.3
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 6.0.7~), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, cdbs, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers-331-updates
+Files:
+ 0b39de6d3e89fcf6a286b88bd5cf6cb8 2497 nvidia-graphics-drivers-331-updates_331.113-0ubuntu0.0.0.3.dsc
+ c4874bda002453f034b95375c62d5b62 89916522 nvidia-graphics-drivers-331-updates_331.113.orig.tar.gz
+ b5206675560ede4afe898b4c804de3da 150677 nvidia-graphics-drivers-331-updates_331.113-0ubuntu0.0.0.3.diff.gz
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Package-List:
+ nvidia-319-updates deb restricted/misc optional
+ nvidia-319-updates-dev deb restricted/misc optional
+ nvidia-331-updates deb restricted/misc optional
+ nvidia-331-updates-dev deb restricted/misc optional
+ nvidia-331-updates-uvm deb restricted/misc optional
+Checksums-Sha1:
+ dc788da6026bb4861c46e4b9355374d0a9fe6be5 2497 nvidia-graphics-drivers-331-updates_331.113-0ubuntu0.0.0.3.dsc
+ f5cb4d503711599e5beb5a1b0bdfc40bf749c27d 89916522 nvidia-graphics-drivers-331-updates_331.113.orig.tar.gz
+ 75e7ddcab4918572814efaa5778cb3daec77c6e3 150677 nvidia-graphics-drivers-331-updates_331.113-0ubuntu0.0.0.3.diff.gz
+Checksums-Sha256:
+ 7264b0e5608521d9e18a782bc3fee7b588e2acde128142b50ebea3ce95791009 2497 nvidia-graphics-drivers-331-updates_331.113-0ubuntu0.0.0.3.dsc
+ 677f1056afe13fe0beeb3f3658ac21f73358640a48207a7ab9380784b27b5884 89916522 nvidia-graphics-drivers-331-updates_331.113.orig.tar.gz
+ 8a8f68f355faa841398da6b0686248e094c21f7f665c3d47c020f599f5183912 150677 nvidia-graphics-drivers-331-updates_331.113-0ubuntu0.0.0.3.diff.gz
+
+Package: nvidia-graphics-drivers-340
+Binary: nvidia-340, nvidia-340-dev, libcuda1-340, nvidia-libopencl1-340, nvidia-opencl-icd-340, nvidia-340-uvm, nvidia-331, nvidia-331-dev, nvidia-331-uvm, nvidia-libopencl1-331, nvidia-opencl-icd-331, libcuda1-331
+Version: 340.93-0ubuntu0.0.0.1
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers-340
+Files:
+ 3b5dec725a4ce8176f5d1532ea8829ea 2825 nvidia-graphics-drivers-340_340.93-0ubuntu0.0.0.1.dsc
+ 5793d6670eefae4f0cd1cc2cff2917b5 100552835 nvidia-graphics-drivers-340_340.93.orig.tar.gz
+ b81730f25a0b513a17fc3f0a160e960e 152524 nvidia-graphics-drivers-340_340.93-0ubuntu0.0.0.1.diff.gz
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Package-List:
+ libcuda1-331 deb restricted/misc optional
+ libcuda1-340 deb restricted/misc optional
+ nvidia-331 deb restricted/misc optional
+ nvidia-331-dev deb restricted/misc optional
+ nvidia-331-uvm deb restricted/misc optional
+ nvidia-340 deb restricted/misc optional
+ nvidia-340-dev deb restricted/misc optional
+ nvidia-340-uvm deb restricted/misc optional
+ nvidia-libopencl1-331 deb restricted/misc optional
+ nvidia-libopencl1-340 deb restricted/misc optional
+ nvidia-opencl-icd-331 deb restricted/misc optional
+ nvidia-opencl-icd-340 deb restricted/misc optional
+Checksums-Sha1:
+ 5e29c6550075f7a19fbfdf8df7c3e0bb162d0751 2825 nvidia-graphics-drivers-340_340.93-0ubuntu0.0.0.1.dsc
+ 3b62ddc2edffeb0d477103d26aa520f465382e9d 100552835 nvidia-graphics-drivers-340_340.93.orig.tar.gz
+ 553a357904689ea2d4285618cfffcf1ea30e3027 152524 nvidia-graphics-drivers-340_340.93-0ubuntu0.0.0.1.diff.gz
+Checksums-Sha256:
+ e79152ac8bb22bda82ec69f97e4e03dff117f3d614a5f25b17b2c99a179ad59e 2825 nvidia-graphics-drivers-340_340.93-0ubuntu0.0.0.1.dsc
+ fd41e7cba69e303852515e4f82d7efb7b0916d116875a9d3683a939841fbd4ef 100552835 nvidia-graphics-drivers-340_340.93.orig.tar.gz
+ cf214983f8b798313d260d99ab508ed7f7b8cbbf920c35a4f74e2107daaee5e1 152524 nvidia-graphics-drivers-340_340.93-0ubuntu0.0.0.1.diff.gz
+
+Package: nvidia-graphics-drivers-340-updates
+Binary: nvidia-340-updates, nvidia-340-updates-dev, libcuda1-340-updates, nvidia-libopencl1-340-updates, nvidia-opencl-icd-340-updates, nvidia-340-updates-uvm, nvidia-331-updates, nvidia-331-updates-dev, nvidia-331-updates-uvm, nvidia-libopencl1-331-updates, nvidia-opencl-icd-331-updates, libcuda1-331-updates
+Version: 340.93-0ubuntu0.0.0.1
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers-340-updates
+Files:
+ 9183c0918a7f9b3110b76b8a500d7199 3073 nvidia-graphics-drivers-340-updates_340.93-0ubuntu0.0.0.1.dsc
+ 5793d6670eefae4f0cd1cc2cff2917b5 100552835 nvidia-graphics-drivers-340-updates_340.93.orig.tar.gz
+ dc183a3c640a7d34c1ef11e7a777ef68 152376 nvidia-graphics-drivers-340-updates_340.93-0ubuntu0.0.0.1.diff.gz
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Package-List:
+ libcuda1-331-updates deb restricted/misc optional
+ libcuda1-340-updates deb restricted/misc optional
+ nvidia-331-updates deb restricted/misc optional
+ nvidia-331-updates-dev deb restricted/misc optional
+ nvidia-331-updates-uvm deb restricted/misc optional
+ nvidia-340-updates deb restricted/misc optional
+ nvidia-340-updates-dev deb restricted/misc optional
+ nvidia-340-updates-uvm deb restricted/misc optional
+ nvidia-libopencl1-331-updates deb restricted/misc optional
+ nvidia-libopencl1-340-updates deb restricted/misc optional
+ nvidia-opencl-icd-331-updates deb restricted/misc optional
+ nvidia-opencl-icd-340-updates deb restricted/misc optional
+Checksums-Sha1:
+ 9f9b85a28f3e306c2b7c555950db9adc8911e24f 3073 nvidia-graphics-drivers-340-updates_340.93-0ubuntu0.0.0.1.dsc
+ 3b62ddc2edffeb0d477103d26aa520f465382e9d 100552835 nvidia-graphics-drivers-340-updates_340.93.orig.tar.gz
+ 852302cfb9d8e62b3b9b41222df20d6a99b85831 152376 nvidia-graphics-drivers-340-updates_340.93-0ubuntu0.0.0.1.diff.gz
+Checksums-Sha256:
+ 4d749681db720882d82a07c0feb3b11789368f3de600b7b205c60111c44ede89 3073 nvidia-graphics-drivers-340-updates_340.93-0ubuntu0.0.0.1.dsc
+ fd41e7cba69e303852515e4f82d7efb7b0916d116875a9d3683a939841fbd4ef 100552835 nvidia-graphics-drivers-340-updates_340.93.orig.tar.gz
+ ba5527d03f80fa19eb96c0bda8532e4591b19b2dc72db223efb90771e2a1525c 152376 nvidia-graphics-drivers-340-updates_340.93-0ubuntu0.0.0.1.diff.gz
+
+Package: nvidia-graphics-drivers-updates
+Binary: nvidia-current-updates, nvidia-current-updates-dev
+Version: 304.88-0ubuntu0.0.1
+Priority: optional
+Section: restricted/misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 6.0.7~), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, cdbs, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64 lpia
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-graphics-drivers-updates
+Files:
+ 1fedb17971b5947306ff5635e4c90de4 2264 nvidia-graphics-drivers-updates_304.88-0ubuntu0.0.1.dsc
+ 91370006d6f92e4ff5b536a4d9f4a7f8 77826624 nvidia-graphics-drivers-updates_304.88.orig.tar.gz
+ 5a0356b383f1fbe49f58280161283829 141694 nvidia-graphics-drivers-updates_304.88-0ubuntu0.0.1.diff.gz
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Package-List:
+ nvidia-current-updates deb restricted/misc optional
+ nvidia-current-updates-dev deb restricted/misc optional
+Checksums-Sha1:
+ 99d3f683b2db8d4e08d1a9b4f582535efcea14f0 2264 nvidia-graphics-drivers-updates_304.88-0ubuntu0.0.1.dsc
+ 5bae1dfc2dbc1f31e8a8000387f472be2f6c014e 77826624 nvidia-graphics-drivers-updates_304.88.orig.tar.gz
+ 01c38b316845ac02cf1ba8e425c53561fc8060f5 141694 nvidia-graphics-drivers-updates_304.88-0ubuntu0.0.1.diff.gz
+Checksums-Sha256:
+ d94b930f16f145df24a5a8b3980861108b187cf799dbac1ea715859f300c5b81 2264 nvidia-graphics-drivers-updates_304.88-0ubuntu0.0.1.dsc
+ d1d1316237670cbb94934bd16c6d2c4f90bf62b4afc55a5163bd2d0e6b9c4974 77826624 nvidia-graphics-drivers-updates_304.88.orig.tar.gz
+ 1832fed69752f9bb42ebc274b7977213a53db2cfd1ed6f9f58f349f7d67568f7 141694 nvidia-graphics-drivers-updates_304.88-0ubuntu0.0.1.diff.gz
+
+Package: nvidia-settings-updates
+Binary: nvidia-settings-updates
+Version: 304.88-0ubuntu0.0.2
+Priority: optional
+Section: restricted/x11
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7), m4, libgtk2.0-dev, libxext-dev, xutils-dev, libxrandr-dev, libgl1-mesa-dev | libgl-dev, libxxf86vm-dev, libxv-dev, quilt
+Architecture: i386 amd64 lpia
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/restricted/n/nvidia-settings-updates
+Files:
+ b338be4a6967808608c011f9f5c83321 2233 nvidia-settings-updates_304.88-0ubuntu0.0.2.dsc
+ 0f73ccff1ddce07383eea15393cc654b 1918882 nvidia-settings-updates_304.88.orig.tar.gz
+ 4f701099a47d40a19dc0f0d08d59aa7b 9427 nvidia-settings-updates_304.88-0ubuntu0.0.2.diff.gz
+Uploaders: Randall Donald <rdonald@debian.org>
+Vcs-Browser: http://github.com/tseliot/nvidia-settings
+Vcs-Git: git://github.com/tseliot/nvidia-settings.git
+Package-List:
+ nvidia-settings-updates deb contrib/x11 optional
+Checksums-Sha1:
+ f7b7932a86e6766b7bffa75ca503b139f48ea996 2233 nvidia-settings-updates_304.88-0ubuntu0.0.2.dsc
+ b94f90b3cc5b2eba7ebe5ed0a5d1de5b5eca4a9f 1918882 nvidia-settings-updates_304.88.orig.tar.gz
+ 4411e3ddf44c97538c864560e1c3a33d8d7d0bb9 9427 nvidia-settings-updates_304.88-0ubuntu0.0.2.diff.gz
+Checksums-Sha256:
+ b3c067a6b4b69577bdc266d3165663d54eb7680638862d6150d743b458cbd3c8 2233 nvidia-settings-updates_304.88-0ubuntu0.0.2.dsc
+ 367c163ecb21535f35d3726e802c274c896c3d647c2909e6a92469e9d260966d 1918882 nvidia-settings-updates_304.88.orig.tar.gz
+ 723c1eae7e85349b73245039acb9ff50c832080b639e7b42293984c2c251ee20 9427 nvidia-settings-updates_304.88-0ubuntu0.0.2.diff.gz
+

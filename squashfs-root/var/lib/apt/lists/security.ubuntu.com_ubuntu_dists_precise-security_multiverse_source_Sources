@@ -1,0 +1,115 @@
+Package: flashplugin-nonfree
+Binary: flashplugin-installer, flashplugin-downloader
+Version: 11.2.202.535ubuntu0.12.04.1
+Priority: optional
+Section: multiverse/web
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Bart Martens <bartm@knars.be>
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/multiverse/f/flashplugin-nonfree
+Files:
+ f9a57cf35f7ce5bbb336b89332873bed 1415 flashplugin-nonfree_11.2.202.535ubuntu0.12.04.1.dsc
+ b7632bc6de4409bb8bffec513acef028 46464 flashplugin-nonfree_11.2.202.535ubuntu0.12.04.1.tar.gz
+Homepage: http://www.adobe.com/products/flashplayer.html
+Package-List:
+ flashplugin-downloader deb contrib/web optional arch=i386
+ flashplugin-installer deb contrib/web optional arch=i386,amd64
+Checksums-Sha1:
+ c153835dc55196a492907e80448ea0273cab7e22 1415 flashplugin-nonfree_11.2.202.535ubuntu0.12.04.1.dsc
+ 699eaa82f728b03ec112fbc5ce4c3543181d5784 46464 flashplugin-nonfree_11.2.202.535ubuntu0.12.04.1.tar.gz
+Checksums-Sha256:
+ 7908bf0f1d8643c17b557e1a568550a881f2729a4596b8fc61f16f9e5113b9b3 1415 flashplugin-nonfree_11.2.202.535ubuntu0.12.04.1.dsc
+ 33fe4160c25eb2107937858b3faa9421beedc61db631c2cccbccb14b90bb7f50 46464 flashplugin-nonfree_11.2.202.535ubuntu0.12.04.1.tar.gz
+
+Package: intel-microcode
+Binary: intel-microcode
+Version: 0.20130808-p-1ubuntu1
+Priority: extra
+Section: multiverse/admin
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Giacomo Catenazzi <cate@debian.org>
+Build-Depends: cdbs, debhelper (>= 5)
+Architecture: i386 amd64
+Standards-Version: 3.9.1
+Format: 1.0
+Directory: pool/multiverse/i/intel-microcode
+Files:
+ f469604cc64276645e18a9f385828acc 1382 intel-microcode_0.20130808-p-1ubuntu1.dsc
+ 05d2079a2d8961e080820243bb10f5ed 721571 intel-microcode_0.20130808-p-1ubuntu1.tar.gz
+Uploaders: Henrique de Moraes Holschuh <hmh@debian.org>
+Homepage: http://feeds.downloadcenter.intel.com/rss/?p=483&lang=eng
+Package-List:
+ intel-microcode deb non-free/admin extra
+Checksums-Sha1:
+ 815d800cdb8ec48077c7a26975b36826d626e577 1382 intel-microcode_0.20130808-p-1ubuntu1.dsc
+ b0c12876eae35aec2846046f3fc14be991e9f3ee 721571 intel-microcode_0.20130808-p-1ubuntu1.tar.gz
+Checksums-Sha256:
+ 72f2e0280a4e6b776ddbc70a21978cce11215e0ccd2e9d75530d88a489f06d99 1382 intel-microcode_0.20130808-p-1ubuntu1.dsc
+ 20598f0dc025a0b957ed3768eda87e510134ebe8bc51d01c61fa582e42a3c18e 721571 intel-microcode_0.20130808-p-1ubuntu1.tar.gz
+Autobuild: yes
+
+Package: redeclipse
+Binary: redeclipse, redeclipse-dbg, redeclipse-server, redeclipse-server-dbg
+Version: 1.2-2ubuntu0.1
+Priority: optional
+Section: multiverse/games
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8), imagemagick, libenet-dev, libgl1-mesa-dev, libsdl-image1.2-dev, libsdl-mixer1.2-dev, libsdl1.2-dev, libx11-dev, zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/r/redeclipse
+Files:
+ 9e81f3f242dea2714bd7b03a5461a693 2357 redeclipse_1.2-2ubuntu0.1.dsc
+ d0568f7dbf9d8337220dae36a74a80bd 954965 redeclipse_1.2.orig.tar.bz2
+ 370321861ba5ce3b430f2b01ed8c2163 18308 redeclipse_1.2-2ubuntu0.1.debian.tar.gz
+Uploaders: Martin Erik Werner <martinerikwerner@gmail.com>
+Homepage: http://www.redeclipse.net
+Vcs-Browser: http://git.debian.org/?p=pkg-games/redeclipse.git;a=summary
+Vcs-Git: git://git.debian.org/pkg-games/redeclipse.git
+Package-List:
+ redeclipse deb contrib/games optional
+ redeclipse-dbg deb contrib/debug extra
+ redeclipse-server deb contrib/games optional
+ redeclipse-server-dbg deb contrib/debug extra
+Checksums-Sha1:
+ e23c3e6cd3f761c4d2c8631d440885ace96e6ae6 2357 redeclipse_1.2-2ubuntu0.1.dsc
+ 654a59338305e137cffd128f005e02e5dbd22e30 954965 redeclipse_1.2.orig.tar.bz2
+ cf6d8931b25f5d72f5fb3b6620fc09964faa4f26 18308 redeclipse_1.2-2ubuntu0.1.debian.tar.gz
+Checksums-Sha256:
+ 4782871bfe62718e4ab8cc2537d9ffabb392b2439fcf58751832f833087d21b1 2357 redeclipse_1.2-2ubuntu0.1.dsc
+ 049edb85f7b0c65218c7c361336a9934534adeb4130de3717eede7dec2a09466 954965 redeclipse_1.2.orig.tar.bz2
+ 02323ae3326512c0e357be0ba87647840f034feb7a457c96dfc8ec0d478607d8 18308 redeclipse_1.2-2ubuntu0.1.debian.tar.gz
+
+Package: unrar-nonfree
+Binary: unrar
+Version: 1:4.0.3-1ubuntu0.1
+Priority: optional
+Section: multiverse/misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Martin Meredith <mez@debian.org>
+Build-Depends: debhelper (>= 7)
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/multiverse/u/unrar-nonfree
+Files:
+ b51f87d926e9a280a4292472cc98c10a 1812 unrar-nonfree_4.0.3-1ubuntu0.1.dsc
+ 2db701a29cf2e7a34b363dc6276b644a 151802 unrar-nonfree_4.0.3.orig.tar.gz
+ 6d578a4a0718467f4850713790edee5b 7341 unrar-nonfree_4.0.3-1ubuntu0.1.debian.tar.gz
+Package-List:
+ unrar deb non-free/utils optional
+Checksums-Sha1:
+ 743de384398faa2d0a33198540f884b870d0bc68 1812 unrar-nonfree_4.0.3-1ubuntu0.1.dsc
+ a669b65dc13a3a7217583f73013ea2233b3bad3c 151802 unrar-nonfree_4.0.3.orig.tar.gz
+ b88d6d7bb4961556852dae14882a45c9cbbf1d00 7341 unrar-nonfree_4.0.3-1ubuntu0.1.debian.tar.gz
+Checksums-Sha256:
+ f1cf0f86c36b7f888b113bed4283e1554c6319836c325e5bcff535aa0ceb8c86 1812 unrar-nonfree_4.0.3-1ubuntu0.1.dsc
+ b56f3ae355adf454712241041e6721c27a7b145363a1db09a4141a3a74738ff1 151802 unrar-nonfree_4.0.3.orig.tar.gz
+ 920e0ded82d4686ebb7afb18f37f1881180828d47b6d2b23d42bf83ac3b62a03 7341 unrar-nonfree_4.0.3-1ubuntu0.1.debian.tar.gz
+Autobuild: yes
+
