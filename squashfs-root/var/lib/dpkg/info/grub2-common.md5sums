@@ -1,0 +1,10 @@
+1eb84266f5f01d95a62ec53eef678022  usr/sbin/grub-reboot
+22dfc8813328f105d346aea037b0ea71  usr/sbin/grub-set-default
+c3ed4e339f7416d43dce67dc095379f2  usr/sbin/update-grub
+038c1c68801ef42ad81fa4d00f67fbc1  usr/share/grub/default/grub
+cfdcfd2635719a174ca6123112c09b52  usr/share/grub/default/grub.md5sum
+2000aaf94e1fbbc86c53eec94e73e8ff  usr/share/info/grub-dev.info.gz
+f864b845cad2c9e672c67f0e5719d1e1  usr/share/info/grub.info.gz
+aaa9fd2f43e9188e7ca57f059074e95c  usr/share/man/man8/grub-reboot.8.gz
+e49cf20f6045be28060b7687652ae0e7  usr/share/man/man8/grub-set-default.8.gz
+9f79cfa5970ec9c3563699faf7cef755  usr/share/man/man8/update-grub.8.gz

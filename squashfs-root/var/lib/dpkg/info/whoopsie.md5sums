@@ -1,0 +1,4 @@
+7691f6dda74215143d40d5c92854417f  usr/bin/whoopsie
+7b3148bc7ccf3f855588a14da8fac757  usr/share/apport/package-hooks/whoopsie.py
+1aeeeb29224378bef46a2ab768aff38a  usr/share/doc/whoopsie/changelog.gz
+23a39655b97d9a32e6848ddac04362e2  usr/share/doc/whoopsie/copyright

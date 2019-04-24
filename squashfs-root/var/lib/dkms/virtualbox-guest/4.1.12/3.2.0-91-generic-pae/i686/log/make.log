@@ -1,0 +1,117 @@
+DKMS make.log for virtualbox-guest-4.1.12 for kernel 3.2.0-91-generic-pae (i686)
+Thu Oct  8 01:11:44 CEST 2015
+make: Entering directory `/usr/src/linux-headers-3.2.0-91-generic-pae'
+  LD      /var/lib/dkms/virtualbox-guest/4.1.12/build/built-in.o
+  LD      /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/built-in.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/VBoxGuest-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/VBoxGuest.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/VBoxGuest2.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/GenericRequest.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/HGCMInternal.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/Init.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/PhysHeap.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/SysHlp.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/VMMDev.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/alloc-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/initterm-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/memobj-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/mpnotification-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/powernotification-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/alloc-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/assert-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/initterm-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/memobj-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/memuserkernel-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/mp-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/mpnotification-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/process-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/semevent-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/semeventmulti-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/semfastmutex-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/spinlock-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/thread-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/thread2-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/time-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/linux/RTLogWriteDebugger-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/r0drv/generic/semspinmutex-r0drv-generic.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/alloc/alloc.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/err/RTErrConvertFromErrno.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/err/RTErrConvertToErrno.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/log/log.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/log/logellipsis.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/log/logrel.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/log/logrelellipsis.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/log/logcom.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/log/logformat.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/misc/RTAssertMsg1Weak.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/misc/RTAssertMsg2.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/misc/RTAssertMsg2Add.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/misc/RTAssertMsg2AddWeak.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/misc/RTAssertMsg2AddWeakV.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/misc/RTAssertMsg2Weak.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/misc/RTAssertMsg2WeakV.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/misc/assert.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/misc/thread.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/RTStrCopy.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/RTStrCopyP.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/strformat.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/strformatrt.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/strformattype.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/strprintf.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/strtonum.o
+/var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/strtonum.c: In function ‘VBoxGuest_RTStrConvertHexBytes’:
+/var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/strtonum.c:977:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+/var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/string/strtonum.c:996:9: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/table/avlpv.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/time/time.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/generic/RTAssertShouldPanic-generic.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/generic/RTLogWriteStdErr-stub-generic.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/generic/RTLogWriteStdOut-stub-generic.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/generic/RTSemEventWait-2-ex-generic.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/generic/RTSemEventWaitNoResume-2-ex-generic.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/generic/RTSemEventMultiWait-2-ex-generic.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/generic/RTSemEventMultiWaitNoResume-2-ex-generic.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/generic/errvars-generic.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/VBox/log-vbox.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/VBox/logbackdoor.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/math/gcc/divdi3.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/math/gcc/moddi3.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/math/gcc/udivdi3.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/math/gcc/umoddi3.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/common/math/gcc/qdivrem.o
+  LD [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/vboxguest.o
+  LD      /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/built-in.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/vfsmod.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/dirops.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/lnkops.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/regops.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/utils.o
+/var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/utils.c: In function ‘sf_nlscpy’:
+/var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/utils.c:581:13: warning: passing argument 3 of ‘utf8_to_utf32’ from incompatible pointer type [enabled by default]
+include/linux/nls.h:53:12: note: expected ‘unicode_t *’ but argument is of type ‘wchar_t *’
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/GenericRequest.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/SysHlp.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/PhysHeap.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/Init.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/VMMDev.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/HGCM.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/VBoxGuestR0LibSharedFolders.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/VbglR0CanUsePhysPageList.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/divdi3.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/moddi3.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/udivdi3.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/umoddi3.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/qdivrem.o
+  LD [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/vboxsf.o
+  LD      /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/built-in.o
+  CC [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/vboxvideo_drm.o
+  LD [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/vboxvideo.o
+  Building modules, stage 2.
+  MODPOST 3 modules
+  CC      /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/vboxguest.mod.o
+  LD [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/vboxguest.ko
+  CC      /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/vboxsf.mod.o
+  LD [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/vboxsf.ko
+  CC      /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/vboxvideo.mod.o
+  LD [M]  /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/vboxvideo.ko
+make: Leaving directory `/usr/src/linux-headers-3.2.0-91-generic-pae'

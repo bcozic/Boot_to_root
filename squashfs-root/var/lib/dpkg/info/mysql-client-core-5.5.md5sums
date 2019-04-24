@@ -1,0 +1,6 @@
+f380b1c868f15be63b6c0de50dee20d8  usr/bin/mysql
+cbe7ed27373cedb7b4f85739b530a05f  usr/bin/mysqlcheck
+17e4e07bc3f93ab9d74b5294c3bbb230  usr/share/doc/mysql-client-core-5.5/changelog.Debian.gz
+a8ced8be5b355af6f26509a2024ad297  usr/share/doc/mysql-client-core-5.5/copyright
+7bb0b2c83a16a5d2c4ac2c170e369121  usr/share/man/man1/mysql.1.gz
+b985d06c6735f9c472aeb36d8b9615a6  usr/share/man/man1/mysqlcheck.1.gz

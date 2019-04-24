@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/sbin
+/usr/sbin/ddcprobe
+/usr/sbin/xresprobe
+/usr/share
+/usr/share/xresprobe
+/usr/share/xresprobe/xprobe.sh
+/usr/share/xresprobe/ddcprobe.sh
+/usr/share/xresprobe/lcdsize.sh
+/usr/share/xresprobe/bitdepth.sh
+/usr/share/xresprobe/rigprobe.sh
+/usr/share/xresprobe/xorg.conf
+/usr/share/doc
+/usr/share/doc/xresprobe
+/usr/share/doc/xresprobe/copyright
+/usr/share/doc/xresprobe/changelog.gz

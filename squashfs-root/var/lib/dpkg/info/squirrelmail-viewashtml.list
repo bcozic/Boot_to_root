@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/squirrelmail
+/usr/share/squirrelmail/plugins
+/usr/share/squirrelmail/plugins/view_as_html
+/usr/share/squirrelmail/plugins/view_as_html/index.php
+/usr/share/squirrelmail/plugins/view_as_html/setup.php
+/usr/share/squirrelmail/plugins/view_as_html/view_as_html.php
+/usr/share/doc
+/usr/share/doc/squirrelmail-viewashtml
+/usr/share/doc/squirrelmail-viewashtml/copyright
+/usr/share/doc/squirrelmail-viewashtml/changelog.gz
+/usr/share/doc/squirrelmail-viewashtml/changelog.Debian.gz

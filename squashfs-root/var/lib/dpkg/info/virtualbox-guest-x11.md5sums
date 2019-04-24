@@ -1,0 +1,14 @@
+0126c433ee7bb2ea5e66d6714b7d2225  usr/bin/VBoxClient
+e891d8378d1d372f753e95ad126181f7  usr/lib/VBoxOGL.so
+81ca9f61681f75c8301d7b5b7741a050  usr/lib/VBoxOGLarrayspu.so
+e0cb2cfef2fbb18627dfc1594b2c8cd9  usr/lib/VBoxOGLcrutil.so
+3b51b8ebfcf21dc84367e303ba7b5882  usr/lib/VBoxOGLerrorspu.so
+a7b6da4cbba6fe0c6de22faeefd30168  usr/lib/VBoxOGLfeedbackspu.so
+468243df98a0b46347e4509091c704d6  usr/lib/VBoxOGLpackspu.so
+9e74316045a1fa0b5f261e644882932e  usr/lib/VBoxOGLpassthroughspu.so
+0fea6f1f60e40138a293095425a2f371  usr/lib/xorg/modules/drivers/vboxvideo_drv.so
+371d63bf721af9f1313084e20d349a39  usr/share/doc/virtualbox-guest-x11/README.Debian
+4f51efac7d40fd16bda89117a7e80ac5  usr/share/doc/virtualbox-guest-x11/copyright
+fc4651a6ab619b5d65addeca1209db9d  usr/share/lintian/overrides/virtualbox-guest-x11
+1d53e8f8db2877d5d628afabaecdc424  usr/share/man/man1/VBoxClient.1.gz
+8d22def70fd8b8e951f70a8d085b2476  usr/share/virtualbox/x11config.pl

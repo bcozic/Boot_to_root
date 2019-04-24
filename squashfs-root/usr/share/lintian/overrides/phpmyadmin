@@ -1,0 +1,2 @@
+# php-gettext in Debian is old, once it is upgraded we will use it
+embedded-php-library usr/share/phpmyadmin/libraries/php-gettext/streams.php

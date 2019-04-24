@@ -1,0 +1,14 @@
+1dea46080a2088330561e39ef8694e4e  usr/lib/python2.7/dist-packages/OpenSSL/SSL.so
+bfe50e54803983384d0be15a4763803b  usr/lib/python2.7/dist-packages/OpenSSL/crypto.so
+376c225a58b5d8b9a5a54022fd077b76  usr/lib/python2.7/dist-packages/OpenSSL/rand.so
+3028465985919598d1e3b9b9eff6c100  usr/share/doc/python-openssl/changelog.Debian.gz
+9a95beaf7d34bfac7f365bffcffd6310  usr/share/doc/python-openssl/copyright
+be90f2535f7f5820a285274889408e7e  usr/share/pyshared/OpenSSL/__init__.py
+d44e830e68391e85b3338e0a6aa54709  usr/share/pyshared/OpenSSL/test/__init__.py
+138f121fc87858be03fc360dc61b9646  usr/share/pyshared/OpenSSL/test/test_crypto.py
+ea3f3500e0234ab73506b9796c0a8620  usr/share/pyshared/OpenSSL/test/test_rand.py
+f0db3c06ed705f1180dfe058993de8d1  usr/share/pyshared/OpenSSL/test/test_ssl.py
+0215c62b1f96464a6636351e139b9a0b  usr/share/pyshared/OpenSSL/test/util.py
+b1e8eb6bb6d0320269aba83fe0a54a95  usr/share/pyshared/OpenSSL/tsafe.py
+6871cbf86ba8c223120d7b296b80c79e  usr/share/pyshared/OpenSSL/version.py
+9fccffeb64a0fed7707366f46ca6e2fd  usr/share/pyshared/pyOpenSSL-0.12.egg-info

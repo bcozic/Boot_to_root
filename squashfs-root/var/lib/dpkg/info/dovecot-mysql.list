@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/dovecot
+/usr/lib/dovecot/modules
+/usr/lib/dovecot/modules/auth
+/usr/lib/dovecot/modules/libdriver_mysql.so
+/usr/lib/dovecot/modules/dict
+/usr/share
+/usr/share/bug
+/usr/share/doc
+/usr/share/doc/dovecot-mysql
+/usr/share/doc/dovecot-mysql/copyright
+/usr/lib/dovecot/modules/auth/libdriver_mysql.so
+/usr/lib/dovecot/modules/dict/libdriver_mysql.so
+/usr/share/bug/dovecot-mysql
+/usr/share/doc/dovecot-mysql/changelog.Debian.gz

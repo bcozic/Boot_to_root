@@ -1,0 +1,1 @@
+../../../../../../share/pyshared/landscape/ui/controller/configuration.py

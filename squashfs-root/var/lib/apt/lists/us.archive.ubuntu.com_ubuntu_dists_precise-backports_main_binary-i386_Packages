@@ -1,0 +1,489 @@
+Package: dput
+Priority: optional
+Section: devel
+Installed-Size: 162
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Y Giridhar Appaji Nag <appaji@debian.org>
+Architecture: all
+Version: 0.9.6.2ubuntu2~ubuntu12.04.1
+Depends: python (>= 2.5), gnupg
+Suggests: openssh-client, lintian, mini-dinstall, rsync, python-bzrlib
+Filename: pool/main/d/dput/dput_0.9.6.2ubuntu2~ubuntu12.04.1_all.deb
+Size: 37282
+MD5sum: 7ee23d5e2ade9d81d792fd2050530e82
+SHA1: 14fee7579fd938fa25ba8a4c3952fc82cafae8d0
+SHA256: 789aff09037833cabeee7668ab1cf6137464aa54eff76cb9015ec1898a5336fc
+Description: Debian package upload tool
+Description-md5: be606ab8f417df2f8c89a0ea937e9a78
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: hplip
+Priority: optional
+Section: utils
+Installed-Size: 408
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.0.2), libhpmud0 (= 3.13.9-1ubuntu0.1~ubuntu12.04.1), libsane (>= 1.0.11-3), libsane-hpaio (= 3.13.9-1ubuntu0.1~ubuntu12.04.1), hplip-data (= 3.13.9-1ubuntu0.1~ubuntu12.04.1), printer-driver-hpcups (= 3.13.9-1ubuntu0.1~ubuntu12.04.1), python2.7, python (>= 2.7), python (<< 2.8), python-dbus (>= 0.80), python-imaging, python-pexpect, python-reportlab, coreutils (>= 5.1.0), lsb-base (>= 3), adduser (>= 3.34), cups (>= 1.1.20), policykit-1, python-gobject-2, wget
+Recommends: printer-driver-postscript-hp, sane-utils, avahi-daemon
+Suggests: hplip-gui, hplip-doc, python-notify, system-config-printer
+Filename: pool/main/h/hplip/hplip_3.13.9-1ubuntu0.1~ubuntu12.04.1_i386.deb
+Size: 81090
+MD5sum: d1f50bb2ace55ccbe68a5425fccab4fb
+SHA1: f0344f5d57b81434c49dd05e736247308a235e5b
+SHA256: 44c7f17743544561f4dd28b6fb49bac88574f90daad9d88a381424ebd8c2fdcb
+Description: HP Linux Printing and Imaging System (HPLIP)
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Description-md5: 2c0bf2568da19b1e4a1da75410d4aa8a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, lubuntu-core, ubuntustudio-desktop
+
+Package: hplip-data
+Priority: optional
+Section: utils
+Installed-Size: 9542
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Architecture: all
+Source: hplip
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Depends: python (>= 2.7.1-0ubuntu2), xz-utils
+Suggests: hplip
+Filename: pool/main/h/hplip/hplip-data_3.13.9-1ubuntu0.1~ubuntu12.04.1_all.deb
+Size: 6717874
+MD5sum: c279c62ce0231999830fb0d917ea4178
+SHA1: cf25979599d4c80af1ee2f00eef13587d270849b
+SHA256: debef2986e92277734bb410a90785613c25036f3c2dc973ed40847561da45a87
+Description: HP Linux Printing and Imaging - data files
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Description-md5: 99432a59ee13492042933313a6992d32
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, lubuntu-core, ubuntustudio-desktop
+
+Package: hplip-dbg
+Priority: extra
+Section: utils
+Installed-Size: 1445
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: hplip
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Depends: hplip (= 3.13.9-1ubuntu0.1~ubuntu12.04.1) | printer-driver-hpcups (= 3.13.9-1ubuntu0.1~ubuntu12.04.1) | printer-driver-hpijs (= 3.13.9-1ubuntu0.1~ubuntu12.04.1)
+Breaks: hplip (<< 3.10.2-2ubuntu2)
+Filename: pool/main/h/hplip/hplip-dbg_3.13.9-1ubuntu0.1~ubuntu12.04.1_i386.deb
+Size: 1116118
+MD5sum: 339d9b7de28fe50ef7f598595fdeaf1a
+SHA1: 4b5cda2088f126c9a0e932cc5ea75fb098513693
+SHA256: 386baa019e3c67500eb99ea826f288fea6db01294a50576b585de86e4e0ffa0f
+Description: HP Linux Printing and Imaging - debugging information
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Description-md5: 710137fceefc7e3d667c64008f481e76
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 18m
+
+Package: hplip-doc
+Priority: optional
+Section: doc
+Installed-Size: 790
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Architecture: all
+Source: hplip
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Suggests: hplip
+Filename: pool/main/h/hplip/hplip-doc_3.13.9-1ubuntu0.1~ubuntu12.04.1_all.deb
+Size: 609614
+MD5sum: e15ccb8590f900d5f02fb5bff7ecb7a1
+SHA1: d1cddb9b3fe4e99aeae545902f90e635e4d7bad6
+SHA256: 2fdc2d7e54cd7c8a2775c397465979b91c144735256b7790ea8648aaf415d702
+Description: HP Linux Printing and Imaging - documentation
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Description-md5: 7a9d622f180b9cbe47e31edb62d9f944
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 18m
+
+Package: libhpmud-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 124
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: hplip
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Depends: libhpmud0 (= 3.13.9-1ubuntu0.1~ubuntu12.04.1)
+Filename: pool/main/h/hplip/libhpmud-dev_3.13.9-1ubuntu0.1~ubuntu12.04.1_i386.deb
+Size: 7408
+MD5sum: 7911f4d6b5600c2d6fab3e5b3ed1da28
+SHA1: ce49f8650927341b85964b48cd7f893c9343f4e8
+SHA256: aa81df257f8a39c844489a4d054aa9775fea8db69e6f22e799b65fc9a78b784f
+Description: HP Multi-Point Transport Driver (hpmud) development libraries
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Description-md5: c3037acc090b7dd9e9bb4af0e55b60d8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 18m
+
+Package: libhpmud0
+Priority: optional
+Section: libs
+Installed-Size: 370
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: hplip
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Replaces: hplip (<< 3.10.6-3)
+Depends: libc6 (>= 2.15), libsnmp15 (>= 5.4.3~dfsg), libusb-1.0-0 (>= 2:1.0.9~rc3)
+Breaks: hplip (<< 3.10.6-3)
+Filename: pool/main/h/hplip/libhpmud0_3.13.9-1ubuntu0.1~ubuntu12.04.1_i386.deb
+Size: 119146
+MD5sum: 30775bb517e5a50d060ed1cd0647fbc9
+SHA1: cecc9021f9010ab1269c3f9de667fd871dde28ee
+SHA256: d96556650438f1507cd847da294dfbfa682f9969b263df87c670c68c8c9055db
+Description: HP Multi-Point Transport Driver (hpmud) run-time libraries
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Description-md5: 1edbc501bdc7dd319ba80065197918f1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: ubuntu-desktop, print-server, ubuntu-usb, kubuntu-desktop, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, lubuntu-core, ubuntustudio-desktop
+
+Package: libjs-jquery
+Priority: optional
+Section: web
+Installed-Size: 390
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Architecture: all
+Source: jquery
+Version: 1.7.2+debian-1ubuntu1~ubuntu12.04.1
+Replaces: jquery
+Suggests: javascript-common
+Conflicts: jquery
+Filename: pool/main/j/jquery/libjs-jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 115076
+MD5sum: fa511ab67f6e960c5b6d39a4d665e47f
+SHA1: 0a0ff462140aedbb0e7c5900637cb60aab1d29cd
+SHA256: 190ca18a71e35c8ab2ba73fe5be3c7cc601fe20b45709d801110818f1b602cc1
+Description: JavaScript library for dynamic web applications
+Homepage: http://jquery.com/
+Description-md5: 7962611d0963445869229c974a815cea
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: ubuntu-desktop, cloud-image, ubuntu-usb, server, kubuntu-desktop, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, mythbuntu-backend-master, lubuntu-core, ubuntustudio-desktop
+
+Package: libjs-underscore
+Priority: optional
+Section: web
+Installed-Size: 167
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Architecture: all
+Source: underscore
+Version: 1.3.3-1ubuntu1~ubuntu12.04.1
+Recommends: libjs-jquery
+Suggests: javascript-common
+Filename: pool/main/u/underscore/libjs-underscore_1.3.3-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 39990
+MD5sum: af9bedb02bcd3b0c9920a2fd0ab7b9b1
+SHA1: 7bb493d326da9415566c2d5ee7e341b53613ea20
+SHA256: e59a85f4136d5159cdc7139e476a20ef6f1d91346ec9ba816aedc1645c112ac8
+Description: JavaScript's functional programming helper library
+Homepage: http://documentcloud.github.com/underscore/
+Description-md5: a77ac32abf4789aa283df7d50866a802
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: libsane-hpaio
+Priority: optional
+Section: libs
+Installed-Size: 1263
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: hplip
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Replaces: hplip (<< 3.10.6-3), hplip-data (<< 3.10.5-4ubuntu1)
+Depends: libc6 (>= 2.7), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.0.2), libhpmud0
+Recommends: sane-utils, hplip (= 3.13.9-1ubuntu0.1~ubuntu12.04.1)
+Breaks: hplip (<< 3.10.6-3), hplip-data (<< 3.10.5-4ubuntu1)
+Filename: pool/main/h/hplip/libsane-hpaio_3.13.9-1ubuntu0.1~ubuntu12.04.1_i386.deb
+Size: 140292
+MD5sum: 02542cfe0d46a2bdaa35d17ccb7fc77f
+SHA1: 850e0b495c929a0e0391ebbef9b0a4a7945cd242
+SHA256: 4eacc9795ace6c26def18ba05d163b65a10d948a147791cfedc4b049adda1b29
+Description: HP SANE backend for multi-function peripherals
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Description-md5: 208dafbff3569d9b6dbc7f0b94df7754
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, lubuntu-core, ubuntustudio-desktop
+
+Package: open-iscsi
+Priority: optional
+Section: net
+Installed-Size: 1624
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian iSCSI Maintainers <pkg-iscsi-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.873-3ubuntu5~ubuntu12.04.1
+Replaces: open-iscsi-utils
+Depends: libc6 (>= 2.4), upstart-job, udev
+Conflicts: open-iscsi-utils (<< 2.0.873-3ubuntu1~)
+Filename: pool/main/o/open-iscsi/open-iscsi_2.0.873-3ubuntu5~ubuntu12.04.1_i386.deb
+Size: 544482
+MD5sum: a340208b3d5df457f06ba81f020df9a6
+SHA1: 62b95c9e97f3a50af525088596d8ca98c150ae55
+SHA256: 689289afeab1abfc499116504d4d79cdbf7a229858e7d1ca4b95a8951fdaddb6
+Description: High performance, transport independent iSCSI implementation
+Homepage: http://www.open-iscsi.org/
+Description-md5: 33466b3fae706f36e3b3609fa29a5250
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: open-iscsi-utils
+Priority: optional
+Section: net
+Installed-Size: 34
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian iSCSI Maintainers <pkg-iscsi-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: open-iscsi
+Version: 2.0.873-3ubuntu5~ubuntu12.04.1
+Depends: open-iscsi
+Filename: pool/main/o/open-iscsi/open-iscsi-utils_2.0.873-3ubuntu5~ubuntu12.04.1_all.deb
+Size: 1740
+MD5sum: 3bbad3304d4d04ff4789bbcaca5ff1d3
+SHA1: 6e98d8c6ce7d7eb31cfd2acc64c98b2c7178dccf
+SHA256: c04ac5c3a0a00b89df2d8d4d81ac64203bbfa9512cc0804b89d7df411158e2f7
+Description: transitional dummy package
+Homepage: http://www.open-iscsi.org/
+Description-md5: bf60ce7d8cb73c593352de5d3e2628d9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: oxygen-cursor-theme
+Priority: optional
+Section: x11
+Installed-Size: 5117
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Sune Vuorela <sune@debian.org>
+Architecture: all
+Source: oxygencursors
+Version: 0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1
+Replaces: oxygen-cursor-theme-extra (<< 0.0.2012-06-kde4.8)
+Suggests: oxygen-cursor-theme-extra
+Breaks: oxygen-cursor-theme-extra (<< 0.0.2012-06-kde4.8)
+Filename: pool/main/o/oxygencursors/oxygen-cursor-theme_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1_all.deb
+Size: 362168
+MD5sum: aea983e5fa9edee7b3fdcb42d3cc1291
+SHA1: 3cc4ae7705e44eed4d1625ed25fca1a4442e1462
+SHA256: 660fb3f5a28121b7a22f4c70d772fc9f6843ded2e2c6332aeeae9596075de565
+Description: Oxygen mouse cursor theme
+Description-md5: 4c5002a4e592e5cc90c51c07857a8cde
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active, edubuntu-desktop-kde
+
+Package: oxygen-cursor-theme-extra
+Priority: optional
+Section: x11
+Installed-Size: 32477
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Sune Vuorela <sune@debian.org>
+Architecture: all
+Source: oxygencursors
+Version: 0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1
+Depends: oxygen-cursor-theme
+Filename: pool/main/o/oxygencursors/oxygen-cursor-theme-extra_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1_all.deb
+Size: 2725212
+MD5sum: 66d78771cc1f13142add718827197b6a
+SHA1: d82c388525ac031e7dc278b046b0ee7f9f4f2834
+SHA256: aa33011263e878b2a1621fc3f9c23960e042367647a9eb0fa8ce8f099c50cd74
+Description: Oxygen mouse cursor theme - extra colors
+Description-md5: 7bf7b82f1ad312760833c12442716fa0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 18m
+
+Package: printer-driver-hpcups
+Priority: optional
+Section: text
+Installed-Size: 1694
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: hplip
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Replaces: hplip-cups (<< 3.11.10-1ubuntu2)
+Depends: libc6 (>= 2.15), libcups2 (>= 1.4.0), libcupsimage2 (>= 1.4.0), libdbus-1-3 (>= 1.0.2), libgcc1 (>= 1:4.1.1), libhpmud0, libjpeg8 (>= 8c), libstdc++6 (>= 4.1.1), cups-filters (>= 1.0.36) | ghostscript-cups, cups (>= 1.4.0) | cupsddk, cups
+Suggests: hplip-doc, hplip (= 3.13.9-1ubuntu0.1~ubuntu12.04.1)
+Breaks: hplip-cups (<< 3.11.10-1ubuntu2)
+Filename: pool/main/h/hplip/printer-driver-hpcups_3.13.9-1ubuntu0.1~ubuntu12.04.1_i386.deb
+Size: 316958
+MD5sum: 16285f756633e7c9839c1bea55c653e1
+SHA1: 6abcf2b786ff1e3acff4db0705afd708587541a4
+SHA256: 7b3a320efcc9fb229bea38604be20b77a908109838530eea6be187827d17164d
+Description: HP Linux Printing and Imaging - CUPS Raster driver (hpcups)
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Description-md5: f0d901d77cf3b6cbd910072d6a2c9cd4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, lubuntu-core, ubuntustudio-desktop
+
+Package: printer-driver-hpijs
+Priority: optional
+Section: text
+Installed-Size: 1864
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: hplip
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Replaces: hpijs (<< 3.11.10-1ubuntu2)
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libgcc1 (>= 1:4.1.1), libhpmud0 (= 3.13.9-1ubuntu0.1~ubuntu12.04.1), libjpeg8 (>= 8c), libstdc++6 (>= 4.1.1)
+Recommends: ghostscript, cups (>= 1.4.0) | cupsddk | hpijs-ppds, foomatic-filters
+Suggests: hplip, hpijs-ppds, hplip-doc
+Breaks: hpijs (<< 3.11.10-1ubuntu2)
+Filename: pool/main/h/hplip/printer-driver-hpijs_3.13.9-1ubuntu0.1~ubuntu12.04.1_i386.deb
+Size: 366918
+MD5sum: 2f2bad665793511c12749d1df6665cef
+SHA1: a7fa365b33921aeba3ba1766c226ef4096278c78
+SHA256: 40ae37b6e20e89edc74defcca05bebd796ca5303a7cc4f7b09f4121942fa03c0
+Description: HP Linux Printing and Imaging - printer driver (hpijs)
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Description-md5: 0abde1720bd76a49ce5f50ce9548ba9b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: ubuntu-desktop, print-server, ubuntu-usb, kubuntu-desktop, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, lubuntu-core, ubuntustudio-desktop
+
+Package: pyppd
+Priority: extra
+Section: python
+Installed-Size: 97
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Printing Group <debian-printing@lists.debian.org>
+Architecture: all
+Version: 1.0.1-1~ubuntu12.04.1
+Depends: python3 (>= 3.1.3-13~), python3.2, perl, xz-utils
+Filename: pool/main/p/pyppd/pyppd_1.0.1-1~ubuntu12.04.1_all.deb
+Size: 15630
+MD5sum: 4b980745d411994e6fd184f72114bbb6
+SHA1: 6da7074855075e0a826c4d592bba44c3489ccec3
+SHA256: 47cadd35b2536e94237a3d83a4d8fcf01b6eaf541b078f0e1c24270f07923ae1
+Description: CUPS PostScript Printer Driver's compressor and generator
+Homepage: http://pypi.python.org/pypi/pyppd
+Description-md5: 430c15cefec8779b4e345c966d8bf857
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 18m
+
+Package: python-geoip
+Priority: optional
+Section: python
+Installed-Size: 110
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.3.2-1~12.04.1ubuntu1
+Depends: geoip-database, python2.7, python (>= 2.7), python (<< 2.8), libc6 (>= 2.3.6-6~), libgeoip1 (>= 1.4.8+dfsg)
+Filename: pool/main/p/python-geoip/python-geoip_1.3.2-1~12.04.1ubuntu1_i386.deb
+Size: 21694
+MD5sum: b025408b416eadb55f9135cb50436911
+SHA1: 7fa2eece3fe48ccf84d945a37181a4fcdb4cd57a
+SHA256: 16a994389cc5650c01375ea6025d426423eeed9751f0c1116716f10b96a8d04d
+Description: Python bindings for the GeoIP IP-to-country resolver library
+Description-md5: 7728feb20ccb4df284edbff75a08cb2d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: rekonq
+Priority: optional
+Section: kde
+Installed-Size: 7552
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.0-0ubuntu1~ubuntu12.04.1
+Provides: www-browser
+Depends: kde-runtime, libc6 (>= 2.4), libkcmutils4 (>= 4:4.7), libkdecore5 (>= 4:4.7), libkdeui5 (>= 4:4.8.4), libkdewebkit5 (>= 4:4.7), libkio5 (>= 4:4.7), libkparts4 (>= 4:4.7), libqt4-dbus (>= 4:4.5.3), libqt4-network (>= 4:4.6.1), libqt4-script (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.8.0), libqtwebkit4 (>= 2.2.0), libstdc++6 (>= 4.1.1), kde-baseapps-bin
+Suggests: kget
+Filename: pool/main/r/rekonq/rekonq_1.0-0ubuntu1~ubuntu12.04.1_i386.deb
+Size: 3891690
+MD5sum: e3f54d118d63e0a59d4e24324a026b62
+SHA1: 97a8993c8dc62331948072a30bfd47ed953f6f18
+SHA256: 9132e5243f10fbaf785f4398724aba6e34ed5d05acb4125d77ec1870451085ad
+Description: KDE web browser based on Webkit
+Homepage: http://rekonq.kde.org/
+Description-md5: 4f2befe2b341d275e963f610c34515e9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active-desktop, kubuntu-active-full, edubuntu-desktop-kde
+
+Package: rekonq-dbg
+Priority: extra
+Section: debug
+Installed-Size: 8292
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Architecture: i386
+Source: rekonq
+Version: 1.0-0ubuntu1~ubuntu12.04.1
+Depends: rekonq (= 1.0-0ubuntu1~ubuntu12.04.1)
+Recommends: kdelibs5-dbg, libqtwebkit4-dbg
+Filename: pool/main/r/rekonq/rekonq-dbg_1.0-0ubuntu1~ubuntu12.04.1_i386.deb
+Size: 8105252
+MD5sum: 74e633b6cd2464a30b3e5363a8f0b44d
+SHA1: 3f0a4bb5d8d747fdc9f988ec15e65155f23563ad
+SHA256: 3dcab6b41a6f04d74c5a29df028f292c2336ca007298013e65bec692ec229249
+Description: debugging symbols for rekonq
+Homepage: http://rekonq.kde.org/
+Description-md5: d54591f3e5bb4e156f58c25982294590
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 18m
+
+Package: tcpdump
+Priority: standard
+Section: net
+Installed-Size: 964
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Romain Francoise <rfrancoise@debian.org>
+Architecture: i386
+Version: 4.5.1-2ubuntu1~ubuntu12.04.1
+Depends: libc6 (>= 2.7), libpcap0.8 (>= 1.0.0), libssl1.0.0 (>= 1.0.0)
+Suggests: apparmor (>= 2.3)
+Filename: pool/main/t/tcpdump/tcpdump_4.5.1-2ubuntu1~ubuntu12.04.1_i386.deb
+Size: 408478
+MD5sum: 86e36b611393311a3eceb7b3a1fc8ee8
+SHA1: 2ebafcc2b7cd753de6df92bdba3cfda725dc73ad
+SHA256: 4da5522ef6c8184e009f9d0f05a7a2e0b0ed7cc21de75ba97642ca837aa35fc0
+Description: command-line network traffic analyzer
+Homepage: http://www.tcpdump.org/
+Description-md5: f01841bfda357d116d7ff7b7a47e8782
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: standard, kubuntu-active
+

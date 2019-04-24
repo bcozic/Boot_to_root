@@ -1,0 +1,1 @@
+../../../../../../../share/pyshared/landscape/ui/model/configuration/__init__.py

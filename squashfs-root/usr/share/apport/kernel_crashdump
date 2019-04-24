@@ -1,0 +1,59 @@
+#!/usr/bin/python
+#
+# Collect information about a kernel oops.
+#
+# Copyright (c) 2007 Canonical Ltd.
+# Author: Martin Pitt <martin.pitt@ubuntu.com>
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation; either version 2 of the License, or (at your
+# option) any later version.  See http://www.gnu.org/copyleft/gpl.html for
+# the full text of the license.
+
+import os, sys
+import apport, apport.fileutils
+
+vmcore_path = os.path.join(apport.fileutils.report_dir, 'vmcore')
+
+if not os.path.exists(vmcore_path):
+    sys.exit(0)
+
+pr = apport.Report('KernelCrash')
+pr['Package'] = apport.packaging.get_kernel_package()
+
+try:
+    core_fd = os.open(vmcore_path, os.O_RDONLY | os.O_NOFOLLOW)
+    pr['VmCore'] = (os.fdopen(core_fd, 'rb'),)
+except (IOError, OSError) as e:
+    apport.fatal('Cannot create report: ' + str(e))
+
+pr.add_os_info()
+
+# only accept plain files here, not symlinks; otherwise we might recursively
+# include the report, or similar DoS attacks
+if os.path.exists(vmcore_path + '.log'):
+    try:
+        log_fd = os.open(vmcore_path + '.log', os.O_RDONLY | os.O_NOFOLLOW)
+        pr['VmCoreLog'] = (os.fdopen(log_fd, 'rb'),)
+        os.unlink(vmcore_path + '.log')
+    except OSError as e:
+        apport.fatal('Cannot open vmcore log: ' + str(e))
+
+# write report
+try:
+    with apport.fileutils.make_report_file(pr) as f:
+        pr.write(f)
+except IOError, e:
+    apport.fatal('Cannot create report: ' + str(e))
+
+# clean up the core files
+try:
+    os.unlink(vmcore_path)
+except OSError:
+    pass # huh, already gone?
+try:
+    os.unlink(vmcore_path + '.log')
+except OSError:
+    pass
+

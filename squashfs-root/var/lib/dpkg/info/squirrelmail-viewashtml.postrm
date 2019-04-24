@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+	remove)
+		if [ `which squirrelmail-configure` ]
+		then
+			squirrelmail-configure --remove-plugin view_as_html
+		fi
+	;;
+	*)
+	;;
+esac
+
+
+
+exit 0

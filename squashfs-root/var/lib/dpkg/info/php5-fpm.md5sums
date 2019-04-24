@@ -1,0 +1,3 @@
+6b321388bb542355dd315fa9b79a2ea2  usr/sbin/php5-fpm
+3b4b4dd6aaa4cb662ed156dfbcde3389  usr/share/lintian/overrides/php5-fpm
+027050d840dc869b8560fec5e27e45b4  usr/share/man/man8/php5-fpm.8.gz

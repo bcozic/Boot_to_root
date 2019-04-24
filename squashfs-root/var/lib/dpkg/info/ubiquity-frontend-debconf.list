@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/ubiquity
+/usr/lib/ubiquity/ubiquity
+/usr/lib/ubiquity/ubiquity/frontend
+/usr/lib/ubiquity/ubiquity/frontend/debconf_ui.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/ubiquity-frontend-debconf
+/usr/share/doc/ubiquity-frontend-debconf/copyright
+/usr/share/python
+/usr/share/python/runtime.d
+/usr/share/python/runtime.d/ubiquity-frontend-debconf.rtupdate
+/usr/share/ubiquity
+/usr/share/ubiquity/unifont.bgf
+/usr/share/doc/ubiquity-frontend-debconf/changelog.gz

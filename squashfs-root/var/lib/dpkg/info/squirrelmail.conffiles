@@ -1,0 +1,8 @@
+/etc/squirrelmail/config_default.php
+/etc/squirrelmail/config_local.php
+/etc/squirrelmail/index.php
+/etc/squirrelmail/default_pref
+/etc/squirrelmail/apache.conf
+/etc/squirrelmail/sqspell_config.php
+/etc/squirrelmail/filters_setup.php
+/etc/cron.daily/squirrelmail

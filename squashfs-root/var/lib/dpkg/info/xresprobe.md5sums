@@ -1,0 +1,10 @@
+bfbc5e3fcae0d345c568023946a03439  usr/sbin/ddcprobe
+5f0d54a1470224daa5fd6bff7cf91d17  usr/sbin/xresprobe
+4a2ae0a2c42c277db35ee16d1a119465  usr/share/xresprobe/xprobe.sh
+15242c0713c151431098ab51699769cf  usr/share/xresprobe/ddcprobe.sh
+caf138ed1d4be735970d2647b6b36acf  usr/share/xresprobe/lcdsize.sh
+4806dc4fedb0a67998e4b881ce8dea62  usr/share/xresprobe/bitdepth.sh
+7a37fcaa25ec8c14f621520c59c5bff6  usr/share/xresprobe/rigprobe.sh
+c4d30cf3dd73b16a7e51b35451ee1dcb  usr/share/xresprobe/xorg.conf
+25fd726e12d054966e4de70f21e3c99a  usr/share/doc/xresprobe/copyright
+78a6dd9ba4d08aeb87c9750576201e40  usr/share/doc/xresprobe/changelog.gz

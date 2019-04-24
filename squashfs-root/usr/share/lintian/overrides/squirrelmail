@@ -1,0 +1,2 @@
+non-standard-dir-perm var/spool/squirrelmail/attach/ 0730 != 0755
+non-standard-dir-perm var/lib/squirrelmail/data/ 0730 != 0755

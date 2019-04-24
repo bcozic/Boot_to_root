@@ -1,0 +1,44 @@
+Format-Specification:
+ http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=166
+Upstream-Contact: Patrick Boettcher <patrick.boettcher@desy.de>
+Source: http://www.cpan.org/authors/id/P/PB/PBOETTCH/
+Upstream-Name: Authen-SASL-Cyrus
+
+Files: *
+Copyright: 2003 Carnegie Mellon University. All rights reserved.
+  2003-5 Patrick Boettcher, DESY Zeuthen. All rights reserved.
+License: Artistic or GPL-1+
+
+Files: debian/*
+Copyright: 2001, Graeme Mathieson <graeme@mathie.cx>
+ 2002, Ben Burton <benb@acm.org>
+ 2002, Graeme Mathieson <mathie@wossname.org.uk>
+ 2003, Mark Brown <broonie@debian.org>
+ 2003, Stephen Zander <gibreel@debian.org>
+ 2004-2011, The Board of Trustees of the Leland Stanford Junior University
+ 2005, Stephen Quinney <stephen@jadevine.org.uk>
+ 2008, Damyan Ivanov <dmn@debian.org>
+License: Artistic or GPL-1+
+Comment: Changes by Graeme Mathieson, Stephen Zander, and Stephen Quinney
+ did not have explicit copyright statements.  See the Debian changelog for
+ the dates of changes.  Presumably all their changes may be redistributed
+ under the same terms as Authen::SASL::Cyrus itself.  Changes by Russ
+ Allbery are copyright The Board of Trustees of the Leland Stanford Junior
+ University and released under the same license as the upstream
+ distribution.
+
+License: Artistic
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the Artistic License, which comes with Perl.
+ .
+ On Debian systems, the complete text of the Artistic License can be
+ found in /usr/share/common-licenses/Artistic.
+
+License: GPL-1+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 1, or (at your option)
+ any later version.
+ .
+ On Debian systems, the complete text of version 1 of the GNU General
+ Public License can be found in /usr/share/common-licenses/GPL-1.

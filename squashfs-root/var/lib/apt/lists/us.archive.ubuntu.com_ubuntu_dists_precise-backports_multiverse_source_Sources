@@ -1,0 +1,361 @@
+Package: cluster3
+Binary: cluster3
+Version: 1.50-1~ubuntu12.04.1
+Priority: optional
+Section: multiverse/science
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), libmotif-dev, autotools-dev, perl, libx11-dev, libice-dev, libxext-dev, libsm-dev, libxt-dev, docbook-to-man
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/c/cluster3
+Files:
+ 2afbaec54c9b94e342cb901e5ee1964f 2216 cluster3_1.50-1~ubuntu12.04.1.dsc
+ f21e0c97923c04b68beb47b0a7cfe0f2 859841 cluster3_1.50.orig.tar.gz
+ 828303cde1e956a81cdaf104ea2a2ae5 8275 cluster3_1.50-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Steffen Moeller <moeller@debian.org>, Charles Plessy <plessy@debian.org>, Thorsten Alteholz <debian@alteholz.de>
+Homepage: http://bonsai.ims.u-tokyo.ac.jp/~mdehoon/software/cluster/
+Vcs-Browser: http://svn.debian.org/wsvn/debian-med/trunk/packages/cluster3/trunk/
+Vcs-Svn: svn://svn.debian.org/debian-med/trunk/packages/cluster3/trunk/
+Package-List:
+ cluster3 deb non-free/science optional
+Checksums-Sha1:
+ 1592bb9eebc23fe108c62fc06f2bd83c81620cca 2216 cluster3_1.50-1~ubuntu12.04.1.dsc
+ 4a9c9d5dd49293c4b731ace93c84f3c838a34c18 859841 cluster3_1.50.orig.tar.gz
+ 315af69634e1cf8817cf68c2aab619c7f689b8f3 8275 cluster3_1.50-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 941aa2944a872da4f85dcaa242dd2a85703eb7c9ebf3ca69447d2d66f5839f4f 2216 cluster3_1.50-1~ubuntu12.04.1.dsc
+ 07c659bc0d39a3e326af05eea098afa26060eba915693774d0bfaded42d5228a 859841 cluster3_1.50.orig.tar.gz
+ 42b06366023414cb2ac58d6d8ebe62fe09279b56ce94ddf629c605cc47ed475d 8275 cluster3_1.50-1~ubuntu12.04.1.debian.tar.gz
+
+Package: fonts-cns11643
+Binary: fonts-cns11643-kai, fonts-cns11643-sung
+Version: 98.1-2~ubuntu12.04.1
+Priority: extra
+Section: multiverse/fonts
+Maintainer: Shih-Yuan Lee (FourDollars) <fourdollars@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/f/fonts-cns11643
+Files:
+ 3f2d1ffdd09789cfea2d1542f52eb28c 1909 fonts-cns11643_98.1-2~ubuntu12.04.1.dsc
+ f2400a2ef1e187f77f19933ebec679e7 25469344 fonts-cns11643_98.1.orig.tar.xz
+ e43213118029f18a7e63bf45cdbc468a 8094 fonts-cns11643_98.1-2~ubuntu12.04.1.debian.tar.gz
+Homepage: http://www.cns11643.gov.tw
+Package-List:
+ fonts-cns11643-kai deb non-free/fonts extra
+ fonts-cns11643-sung deb non-free/fonts extra
+Checksums-Sha1:
+ c45241c8c8b897c7641c6c26e6ac5c84a5294310 1909 fonts-cns11643_98.1-2~ubuntu12.04.1.dsc
+ ee9a02001079d860739899c0a7a45361751f3a4c 25469344 fonts-cns11643_98.1.orig.tar.xz
+ a27d76427530d5454cff0a90a7a1a3b71a642570 8094 fonts-cns11643_98.1-2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 2f171bf7c6fc8379509ece8c82e32b359339c88f7403c67b645c2cb98a8a0367 1909 fonts-cns11643_98.1-2~ubuntu12.04.1.dsc
+ 7a82a6bc2becb0de59db4e185a32e6c946a05069e1bbe53397bb6092cdd48ec2 25469344 fonts-cns11643_98.1.orig.tar.xz
+ 3441c8d9de670e32efe67dec386cb812f091c723c7c228f42aa25142895cd1b2 8094 fonts-cns11643_98.1-2~ubuntu12.04.1.debian.tar.gz
+
+Package: frogatto
+Binary: frogatto
+Version: 1.2+dfsg-1~ubuntu12.04.1
+Priority: extra
+Section: multiverse/games
+Maintainer: Dmitry E. Oboukhov <unera@debian.org>
+Build-Depends: cdbs, debhelper (>= 7.0), libz-dev, libpng-dev, libsdl1.2-dev (>= 1.2.7), libboost-dev (>= 1.35), libglew1.5-dev | libglew1.6-dev, libsdl-ttf2.0-dev (>= 2.0.8), libsdl-mixer1.2-dev (>= 1.2.7), libsdl-image1.2-dev (>= 1.2.7), libboost-regex-dev (>= 1.35), libboost-system-dev (>= 1.35)
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/f/frogatto
+Files:
+ 8b228c795b0579ab8af355ed09e62fa2 2294 frogatto_1.2+dfsg-1~ubuntu12.04.1.dsc
+ 5626236dae4df8efc62e33de8775558b 1186195 frogatto_1.2+dfsg.orig.tar.gz
+ 9e5782aba0284300b4945140be0c760e 10106 frogatto_1.2+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>, Vincent Cheng <Vincentc1208@gmail.com>
+Homepage: http://www.frogatto.com/
+Vcs-Browser: http://git.debian.org/?p=pkg-games/frogatto.git;a=summary
+Vcs-Git: git://git.debian.org/git/pkg-games/frogatto.git
+Package-List:
+ frogatto deb contrib/games extra
+Checksums-Sha1:
+ c43f03fdbe2850822a357bfd38031dbd2bc69394 2294 frogatto_1.2+dfsg-1~ubuntu12.04.1.dsc
+ 7be728cd790b83a442f7db77149df7c6fbd122a3 1186195 frogatto_1.2+dfsg.orig.tar.gz
+ 0dbf83f133772cccee9b41de892a3290f6b599e2 10106 frogatto_1.2+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ a10d0be8a9e552220280d6f064cf4d1df39c453736de111a4a303602c911f90d 2294 frogatto_1.2+dfsg-1~ubuntu12.04.1.dsc
+ 3c9fbfab69bb2d6454db650cef9921fd1b2e3dff61519efe724cfae10fa2d3d4 1186195 frogatto_1.2+dfsg.orig.tar.gz
+ c7218c9ac580768fc08d0fe90ca0f1e8e8852ba9fe7a5c251529533a71a0f241 10106 frogatto_1.2+dfsg-1~ubuntu12.04.1.debian.tar.gz
+
+Package: frogatto-data
+Binary: frogatto-data
+Version: 1.2+dfsg-1~ubuntu12.04.1
+Priority: extra
+Section: multiverse/games
+Maintainer: Dmitry E. Oboukhov <unera@debian.org>
+Build-Depends: cdbs, debhelper (>= 7.0)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/f/frogatto-data
+Files:
+ 50fcf8e078317fe84ad241da59302737 2093 frogatto-data_1.2+dfsg-1~ubuntu12.04.1.dsc
+ 8c845ecc5792ca9e47da5f86ca7c9f61 163562683 frogatto-data_1.2+dfsg.orig.tar.gz
+ 1ffc0f5b21a18c88ad46d52b90f11cd4 2241 frogatto-data_1.2+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>, Vincent Cheng <Vincentc1208@gmail.com>
+Homepage: http://www.frogatto.com/
+Vcs-Browser: http://git.debian.org/?p=pkg-games/frogatto-data.git;a=summary
+Vcs-Git: git://git.debian.org/git/pkg-games/frogatto-data.git
+Package-List:
+ frogatto-data deb non-free/games extra
+Checksums-Sha1:
+ 6e1aef1bf4687c1c291ec9e5fa1df2925c2a10eb 2093 frogatto-data_1.2+dfsg-1~ubuntu12.04.1.dsc
+ 01d42345460de46d080006ab9dff4722c644f07f 163562683 frogatto-data_1.2+dfsg.orig.tar.gz
+ b4120632456482519985ff716b32df7235d1d02b 2241 frogatto-data_1.2+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ d47995ea02d85731dd98d7ba6c94e257568238f951a612a018c5c3fce35f739a 2093 frogatto-data_1.2+dfsg-1~ubuntu12.04.1.dsc
+ 58d740addcf9c9dce90cb6806685f92899fbc5b9ae03e7969fffe9184e7b7cb8 163562683 frogatto-data_1.2+dfsg.orig.tar.gz
+ d961e61a8c4433a3fcb73d1102fac1de903e5b59be2aca6127da7341566d6201 2241 frogatto-data_1.2+dfsg-1~ubuntu12.04.1.debian.tar.gz
+
+Package: iucode-tool
+Binary: iucode-tool
+Version: 1.0.3-1~ubuntu12.04.1
+Priority: optional
+Section: multiverse/utils
+Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Build-Depends: debhelper (>= 7), autotools-dev, automake (>= 1:1.10), autoconf (>= 2.61)
+Architecture: i386 amd64
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/multiverse/i/iucode-tool
+Files:
+ 0489b3dae471cdf230708431f2ae0591 2009 iucode-tool_1.0.3-1~ubuntu12.04.1.dsc
+ 2e00d53c61ba868ed050bcfab3efa97d 118352 iucode-tool_1.0.3.orig.tar.xz
+ 696f1553a0b18ec0109c4c611e131a0a 4316 iucode-tool_1.0.3-1~ubuntu12.04.1.debian.tar.xz
+Homepage: https://gitorious.org/iucode-tool/pages/Home
+Vcs-Browser: https://gitorious.org/iucode-tool/iucode-tool
+Vcs-Git: git://gitorious.org/iucode-tool/iucode-tool.git -b debian/master
+Package-List:
+ iucode-tool deb contrib/utils optional arch=i386,amd64
+Checksums-Sha1:
+ 862418eb11a91bee33b71ed7a955ff288d03f585 2009 iucode-tool_1.0.3-1~ubuntu12.04.1.dsc
+ 6e2e442d370e5a4c05aca2441485fa173742f918 118352 iucode-tool_1.0.3.orig.tar.xz
+ f78230955f4a143d489e8840aad8c6fb54b043e7 4316 iucode-tool_1.0.3-1~ubuntu12.04.1.debian.tar.xz
+Checksums-Sha256:
+ cb0d85dc35975c1e100108ff1eb3dcd1c11037e8677d281095822039dd244925 2009 iucode-tool_1.0.3-1~ubuntu12.04.1.dsc
+ 865f4458a4e0eab54b033c25d0ee60803fd6b76daae1bfea897869bfce073f63 118352 iucode-tool_1.0.3.orig.tar.xz
+ 8a7eb233bb76df08c0791e226fb6e78d532784e97c9ff8e82d3f6a85d7a45350 4316 iucode-tool_1.0.3-1~ubuntu12.04.1.debian.tar.xz
+
+Package: java-package
+Binary: java-package
+Version: 0.50ubuntu1.1~ubuntu12.04.1
+Priority: optional
+Section: multiverse/misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 5)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 1.0
+Directory: pool/multiverse/j/java-package
+Files:
+ 54bd9fbdd30b04c083a3c659010b84b1 1793 java-package_0.50ubuntu1.1~ubuntu12.04.1.dsc
+ 7fbb135e62bf1bb7730c2c9b51762d6a 18362 java-package_0.50ubuntu1.1~ubuntu12.04.1.tar.gz
+Uploaders: Cédric Pineau <cedric.pineau@gmail.com>
+Vcs-Browser: http://git.debian.org/?p=pkg-java/java-package.git
+Vcs-Git: git://git.debian.org/git/pkg-java/java-package.git
+Package-List:
+ java-package deb contrib/misc optional
+Checksums-Sha1:
+ f7d766584d6442be08b88ed0d7bc7e28fa36b71f 1793 java-package_0.50ubuntu1.1~ubuntu12.04.1.dsc
+ 35b24b83f12e16443776fb8154fc09395a3c0807 18362 java-package_0.50ubuntu1.1~ubuntu12.04.1.tar.gz
+Checksums-Sha256:
+ 6dc488bfee2997f20e9653d6b94505b6a982bb4fa1a4c62e49593d4cff4f2453 1793 java-package_0.50ubuntu1.1~ubuntu12.04.1.dsc
+ bf99455a6e2b14ec3b953b270af062f2bcb3b0f7e186c74e40b23e2a67f73cde 18362 java-package_0.50ubuntu1.1~ubuntu12.04.1.tar.gz
+
+Package: lgeneral
+Binary: lgeneral, lgc-pg
+Version: 1.2.3+dfsg-1~ubuntu12.04.1
+Priority: optional
+Section: multiverse/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: autotools-dev, debhelper (>= 9), libsdl-mixer1.2-dev, libsdl1.2-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/multiverse/l/lgeneral
+Files:
+ 000614d2bfa28722c13a26f83df72037 2108 lgeneral_1.2.3+dfsg-1~ubuntu12.04.1.dsc
+ d16a0d2e02941d0f640c1931ec5df06d 1594154 lgeneral_1.2.3+dfsg.orig.tar.gz
+ 6c457f13c0da2e97486949c0ff81d79e 17793 lgeneral_1.2.3+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Markus Koschany <apo@gambaru.de>
+Homepage: http://lgames.sourceforge.net
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-games/lgeneral.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-games/lgeneral.git
+Package-List:
+ lgc-pg deb contrib/games optional
+ lgeneral deb contrib/games optional
+Checksums-Sha1:
+ a8301f47dd77494525eed43ff670c66a333ba7d9 2108 lgeneral_1.2.3+dfsg-1~ubuntu12.04.1.dsc
+ ebeacfff07ddb7160df391c1dcaed872a3be345b 1594154 lgeneral_1.2.3+dfsg.orig.tar.gz
+ 94c1f80d8892f871cc25e2d44f68016986d60a4d 17793 lgeneral_1.2.3+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 0c7a6ccb11a8847688337a0b85cd95d90c017e5cb5c7da7fcaa8f7951e9a30df 2108 lgeneral_1.2.3+dfsg-1~ubuntu12.04.1.dsc
+ d64068b0bc9d70a5d7505742f9ee0a1d7ca59b2a01406d5471e8ae47310313c2 1594154 lgeneral_1.2.3+dfsg.orig.tar.gz
+ 616e7edb993c8d4640b813027d3749a812bbf27c36749f71e648c96b273f3c4a 17793 lgeneral_1.2.3+dfsg-1~ubuntu12.04.1.debian.tar.gz
+
+Package: paml
+Binary: paml, paml-doc
+Version: 4.5-1~ubuntu12.04.1
+Priority: extra
+Section: multiverse/science
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9)
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/p/paml
+Files:
+ 16eb8fd13518b259c0f0b211f1b9674b 2110 paml_4.5-1~ubuntu12.04.1.dsc
+ c87ddcf7e993496be30760ecd542113d 3485473 paml_4.5.orig.tar.gz
+ 29822d8e35d6ec6ea9fc2a9ee91c143b 4622 paml_4.5-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Pjotr Prins <pjotr.debian@thebird.nl>, Steffen Moeller <moeller@debian.org>, Andreas Tille <tille@debian.org>
+Dm-Upload-Allowed: yes
+Homepage: http://abacus.gene.ucl.ac.uk/software/paml.html
+Vcs-Browser: http://svn.debian.org/wsvn/debian-med/trunk/packages/paml/trunk/
+Vcs-Svn: svn://svn.debian.org/debian-med/trunk/packages/paml/trunk
+Package-List:
+ paml deb non-free/science extra
+ paml-doc deb non-free/doc extra
+Checksums-Sha1:
+ 1078c1ac440f157e9158473e85e110a672e3e251 2110 paml_4.5-1~ubuntu12.04.1.dsc
+ b2b9933c883d77a8fc1d1ef8928060d972f43c0b 3485473 paml_4.5.orig.tar.gz
+ 200d218c34d510575e56674a95173137a77c10f1 4622 paml_4.5-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 80397271e9d68d345a7c442e7c249cc36aaacdce16ddbbb7867af0d6889667a1 2110 paml_4.5-1~ubuntu12.04.1.dsc
+ d53a2bea4f2169ff19c52cb2eeed11cc0d8710318be5af78ee10d8ceb9e3a034 3485473 paml_4.5.orig.tar.gz
+ 7fae5b2c75e9de96978ccc67adef70e16307bb94ca2d744f5cdd8a735ee50c7a 4622 paml_4.5-1~ubuntu12.04.1.debian.tar.gz
+
+Package: pycuda
+Binary: python-pycuda-headers, python-pycuda, python-pycuda-doc
+Version: 2012.1-1ubuntu2~ubuntu12.04.1
+Priority: optional
+Section: multiverse/python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Tomasz Rybak <tomasz.rybak@post.pl>
+Build-Depends: debhelper (>= 9), python-all-dev, python-setuptools, libcuda1-dev | libcuda1 | nvidia-current, nvidia-cuda-toolkit, libboost-python-dev, libboost-thread-dev, mesa-common-dev, python-numpy (>= 1:1.4.1-4~), python-sphinx (>= 1.0.7+dfsg), python-pytools (>= 2011.5)
+Architecture: all amd64 i386
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/p/pycuda
+Files:
+ b41825c3107a3b2b500a8f6c3a8dc4e0 2416 pycuda_2012.1-1ubuntu2~ubuntu12.04.1.dsc
+ 84b0908cbb7bc41154afb8ff6138ff84 215132 pycuda_2012.1.orig.tar.gz
+ 74b922a39e1805505dd9cd40b7f68fab 7838 pycuda_2012.1-1ubuntu2~ubuntu12.04.1.debian.tar.gz
+Homepage: http://mathema.tician.de/software/pycuda
+Vcs-Browser: http://git.debian.org/?p=collab-maint/python-pycuda.git
+Vcs-Git: git://git.debian.org/git/collab-maint/python-pycuda.git
+Package-List:
+ python-pycuda deb contrib/python optional
+ python-pycuda-doc deb contrib/doc optional
+ python-pycuda-headers deb contrib/python optional
+Checksums-Sha1:
+ e05d4349282b0ada6f6c2d11d87b61274aae2f67 2416 pycuda_2012.1-1ubuntu2~ubuntu12.04.1.dsc
+ 99140e37d75e32451ea28448394188a557f873c0 215132 pycuda_2012.1.orig.tar.gz
+ d83d0c2ea6920e5f9880315a103d4def0956089b 7838 pycuda_2012.1-1ubuntu2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 3ad918e856ea4d88e0e706784155b22bc368db8bb183ac74398f0f0f69c00665 2416 pycuda_2012.1-1ubuntu2~ubuntu12.04.1.dsc
+ e1c3b3273b3bba9833812ec4d609f6f3d3d0e6179baeb02323fa75596f9593f8 215132 pycuda_2012.1.orig.tar.gz
+ 232257867f159b31764645f1907d4ef100f202cdb631c69440c7ff2f4e4f0a60 7838 pycuda_2012.1-1ubuntu2~ubuntu12.04.1.debian.tar.gz
+
+Package: redeclipse
+Binary: redeclipse, redeclipse-dbg, redeclipse-server, redeclipse-server-dbg
+Version: 1.3.1-1~ubuntu12.04.1
+Priority: optional
+Section: multiverse/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), libenet-dev, liblg1-mesa-dev | libgl-dev, libsdl-image1.2-dev, libsdl-mixer1.2-dev, libsdl1.2-dev | libsdl-dev, libx11-dev, zlib1g-dev | libz-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/r/redeclipse
+Files:
+ c7a42d6152cae95e40927fa87f588182 1692 redeclipse_1.3.1-1~ubuntu12.04.1.dsc
+ 42da6851eb0da315f052aea54f390301 908020 redeclipse_1.3.1.orig.tar.xz
+ 4b3913b375a77d0c4a2bbdee5129e4f8 19208 redeclipse_1.3.1-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Martin Erik Werner <martinerikwerner@gmail.com>
+Homepage: http://www.redeclipse.net
+Vcs-Browser: http://git.debian.org/?p=pkg-games/redeclipse.git;a=summary
+Vcs-Git: git://git.debian.org/pkg-games/redeclipse.git
+Package-List:
+ redeclipse deb contrib/games optional
+ redeclipse-dbg deb contrib/debug extra
+ redeclipse-server deb contrib/games optional
+ redeclipse-server-dbg deb contrib/debug extra
+Checksums-Sha1:
+ e10b427ee54aefb48051682854dfc8648a3e1c58 1692 redeclipse_1.3.1-1~ubuntu12.04.1.dsc
+ 61de70cf98849b77ae4644a041d4fb34637fc8a8 908020 redeclipse_1.3.1.orig.tar.xz
+ a586c7e181d3cab0300767d23a1256557fabb072 19208 redeclipse_1.3.1-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 334013fc7e5f6be63362156d6e06de7701e20afcc0b1b113346da5ccd863f35c 1692 redeclipse_1.3.1-1~ubuntu12.04.1.dsc
+ ff825dadb51106afde1aeffd6d14923d79b16da08a8a6797871b4b4263b1a5a1 908020 redeclipse_1.3.1.orig.tar.xz
+ 956d8ec884733400d915a8e621d68372d82e4840efdbb15bb1250b97b42152a7 19208 redeclipse_1.3.1-1~ubuntu12.04.1.debian.tar.gz
+
+Package: redeclipse-data
+Binary: redeclipse-data
+Version: 1.3.1-1~ubuntu12.04.1
+Priority: optional
+Section: multiverse/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: cube2font, debhelper (>= 9), fonts-play
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/r/redeclipse-data
+Files:
+ 4d0355ea1ff611958649cd1b2dc6e9a2 1442 redeclipse-data_1.3.1-1~ubuntu12.04.1.dsc
+ e9748dbd02e29fd1d6b345550db774ea 486034872 redeclipse-data_1.3.1.orig.tar.xz
+ f4362526d1a5264926231f1afe457673 22640 redeclipse-data_1.3.1-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Martin Erik Werner <martinerikwerner@gmail.com>
+Homepage: http://www.redeclipse.net
+Vcs-Browser: http://git.debian.org/?p=pkg-games/redeclipse-data.git;a=summary
+Vcs-Git: git://git.debian.org/pkg-games/redeclipse-data.git
+Package-List:
+ redeclipse-data deb non-free/games optional
+Checksums-Sha1:
+ 82ac98dc510b5c99c9763254026f355f0166c686 1442 redeclipse-data_1.3.1-1~ubuntu12.04.1.dsc
+ ee5f56d9efb65c9a900b475fb3e6c5d2ed6aaf17 486034872 redeclipse-data_1.3.1.orig.tar.xz
+ 63556954a03324e385d7106f4c0f86974d1c0652 22640 redeclipse-data_1.3.1-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ f0fd3ca09f4a3caa9e468f1a5c8514a21941be12ec67f63d930c3a3290f14a64 1442 redeclipse-data_1.3.1-1~ubuntu12.04.1.dsc
+ b9080e02ffab90aa8703c754e76768882f8558ae9a2c992b9ed2b57c744c699f 486034872 redeclipse-data_1.3.1.orig.tar.xz
+ cf33a0ef8095b1e96970e391c18055adb75061d403cdae651f0ba4e87e50ce67 22640 redeclipse-data_1.3.1-1~ubuntu12.04.1.debian.tar.gz
+
+Package: ttytter
+Binary: ttytter
+Version: 2.1.0-1~ubuntu12.04.1
+Priority: optional
+Section: multiverse/net
+Maintainer: Thijs Kinkhorst <thijs@debian.org>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/multiverse/t/ttytter
+Files:
+ 22a2d1af882826e3ae509d11d64cb849 1226 ttytter_2.1.0-1~ubuntu12.04.1.dsc
+ f0b26b58a9eff744fbd91bba44b11488 125353 ttytter_2.1.0.orig.tar.gz
+ f22450523eb36d67ea392c51f127ebf5 6981 ttytter_2.1.0-1~ubuntu12.04.1.diff.gz
+Homepage: http://www.floodgap.com/software/ttytter/
+Vcs-Browser: https://aphrodite.kinkhorst.nl/wsvn/debian/ttytter/
+Vcs-Svn: https://svn.kinkhorst.nl/svn/debian/ttytter/trunk/
+Package-List:
+ ttytter deb non-free/net optional
+Checksums-Sha1:
+ 46611e95516dece3f0e12bc881ed0c95a840933a 1226 ttytter_2.1.0-1~ubuntu12.04.1.dsc
+ a4424b1038a743d9bdc7566e5bf71775bcded20f 125353 ttytter_2.1.0.orig.tar.gz
+ 428c7c3cbcdad7fb47701e1a84d2bd0c369c1810 6981 ttytter_2.1.0-1~ubuntu12.04.1.diff.gz
+Checksums-Sha256:
+ b7a47dcdb2efcf320d40d9ab83871801c68b60e103fc88e0c53f6981c3c59c43 1226 ttytter_2.1.0-1~ubuntu12.04.1.dsc
+ 732e25547f7cee697400ba79d0267a8c1235aa714c0f7fd6f83c302873babab7 125353 ttytter_2.1.0.orig.tar.gz
+ 4b2d9be03f057e4039b3e5a235621c89b754e026f5eaa141721284bb6a045b70 6981 ttytter_2.1.0-1~ubuntu12.04.1.diff.gz
+

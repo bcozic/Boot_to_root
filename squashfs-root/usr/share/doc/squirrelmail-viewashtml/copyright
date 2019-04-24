@@ -1,0 +1,30 @@
+Original source may be found at: http://www.squirrelmail.org/plugin_view.php?id=55
+
+Files: *
+Copyright: © 2001-2009 Seth Randall <indiri69@users.sourceforge.net>
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation; either version 2 of the License, or (at your option) any later
+ version.
+
+Files: index.php
+Copyright: © 1999-2002 The SquirrelMail Project Team
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation; either version 2 of the License, or (at your option) any later
+ version.
+
+Files: debian/*
+Copyright: © 2008-2009 Jan Hauke Rahm <jhr@debian.org>
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation; either version 2 of the License, or (at your option) any later
+ version.
+
+On Debian systems, the complete text of the GNU General Public License
+can be found in file "/usr/share/common-licenses/GPL-2". Possible later
+versions are found within the same directory (e.g.
+"/usr/share/common-licenses/GPL-3").

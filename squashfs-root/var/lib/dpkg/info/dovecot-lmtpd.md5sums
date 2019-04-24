@@ -1,0 +1,3 @@
+6a984ad9fa4463613c201717d1ba68cd  usr/lib/dovecot/lmtp
+72f5d634266d31a510c2ee87b700ecda  usr/share/doc/dovecot-lmtpd/copyright
+ff06d84d8f4c67a11e16e74670918f18  usr/share/dovecot/conf.d/20-lmtp.conf

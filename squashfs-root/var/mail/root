@@ -1,0 +1,16 @@
+From zaz@mail.borntosec.net  Wed Oct 14 00:26:52 2015
+Return-Path: <zaz@mail.borntosec.net>
+X-Original-To: root
+Delivered-To: root@mail.borntosec.net
+Received: by localhost (Postfix, from userid 1005)
+	id 101CF60607; Wed, 14 Oct 2015 00:26:52 +0200 (CEST)
+To: root@mail.borntosec.net
+From: zaz@mail.borntosec.net
+Auto-Submitted: auto-generated
+Subject: *** SECURITY information for localhost ***
+Message-Id: <20151013222652.101CF60607@localhost>
+Date: Wed, 14 Oct 2015 00:26:52 +0200 (CEST)
+
+localhost : Oct 14 00:26:51 : zaz : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/zaz ; USER=root ; COMMAND=/bin/su
+
+

@@ -1,0 +1,1 @@
+cmd_/var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/vboxvideo.o := ld -m elf_i386   -r -o /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/vboxvideo.o /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/vboxvideo_drm.o 

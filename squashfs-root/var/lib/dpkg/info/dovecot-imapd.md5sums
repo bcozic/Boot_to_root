@@ -1,0 +1,7 @@
+89b9abef7a22d2c8a72adcf1d62d6fd2  usr/lib/dovecot/imap
+162cd1dcce11e27d22b609cdf577b7f8  usr/lib/dovecot/imap-login
+d03215439075ae30bcd15b9e3dbfcc03  usr/lib/dovecot/modules/lib02_imap_acl_plugin.so
+4d520b079fbcf1ce1d842083c23c4230  usr/lib/dovecot/modules/lib11_imap_quota_plugin.so
+5ac950c85db69c83ca6972017b145c40  usr/lib/dovecot/modules/lib30_imap_zlib_plugin.so
+72f5d634266d31a510c2ee87b700ecda  usr/share/doc/dovecot-imapd/copyright
+8288ada37e156aa28569b0a6250856b8  usr/share/dovecot/conf.d/20-imap.conf

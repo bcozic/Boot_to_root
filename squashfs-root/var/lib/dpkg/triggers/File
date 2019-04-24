@@ -1,0 +1,16 @@
+/etc/init ureadahead
+/etc/init.d ureadahead
+/usr/lib/i386-linux-gnu/gio/modules libglib2.0-0
+/usr/lib/gio/modules libglib2.0-0
+/usr/share/glib-2.0/schemas libglib2.0-0
+/usr/share/package-data-downloads update-notifier-common
+/usr/share/info install-info
+/usr/man man-db
+/usr/share/man man-db
+/usr/local/man man-db
+/usr/local/share/man man-db
+/usr/X11R6/man man-db
+/opt/man man-db
+/etc/lsb-release plymouth-theme-ubuntu-text
+/etc/ufw/applications.d ufw
+/etc/php5/conf.d libapache2-mod-php5

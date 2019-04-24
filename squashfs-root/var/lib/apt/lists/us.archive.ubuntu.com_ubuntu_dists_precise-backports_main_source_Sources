@@ -1,0 +1,313 @@
+Package: dput
+Binary: dput
+Version: 0.9.6.2ubuntu2~ubuntu12.04.1
+Priority: optional
+Section: devel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Y Giridhar Appaji Nag <appaji@debian.org>
+Build-Depends-Indep: debconf-utils (>= 1.1.1)
+Architecture: all
+Standards-Version: 3.9.1
+Format: 3.0 (native)
+Directory: pool/main/d/dput
+Files:
+ 32979f874cb2bce7b4e71808997bc4c0 1659 dput_0.9.6.2ubuntu2~ubuntu12.04.1.dsc
+ f0d1c5c269f956b746bf64c4d71e5dec 53407 dput_0.9.6.2ubuntu2~ubuntu12.04.1.tar.gz
+Vcs-Browser: http://git.debian.org/?p=collab-maint/dput.git
+Vcs-Git: git://git.debian.org/git/collab-maint/dput.git
+Package-List:
+ dput deb devel optional
+Checksums-Sha1:
+ 64c6e4d09e8a5e9ccf2e6d0af7ec2469f3d6bbbe 1659 dput_0.9.6.2ubuntu2~ubuntu12.04.1.dsc
+ c45a12039392e13cf3e021744a9cb84a36ff3dd2 53407 dput_0.9.6.2ubuntu2~ubuntu12.04.1.tar.gz
+Checksums-Sha256:
+ 8e7cb710140277f25f3b3f294eafce24dd56806ef6103c10199b7f421c2f6158 1659 dput_0.9.6.2ubuntu2~ubuntu12.04.1.dsc
+ 361ac119f28ba985a7dd2ac40fe91a070d7b649ef1f4c4667cbe8c167db1368d 53407 dput_0.9.6.2ubuntu2~ubuntu12.04.1.tar.gz
+
+Package: hplip
+Binary: hplip, hplip-data, printer-driver-postscript-hp, hplip-gui, hplip-dbg, hplip-doc, hpijs-ppds, printer-driver-hpijs, printer-driver-hpcups, libhpmud0, libhpmud-dev, libsane-hpaio
+Version: 3.13.9-1ubuntu0.1~ubuntu12.04.1
+Priority: optional
+Section: utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Build-Depends: libcups2-dev, libcupsimage2-dev, libsane-dev, libsnmp-dev, libjpeg-dev, libusb-1.0-0-dev [linux-any], libusb-dev [!linux-any], debhelper (>= 9), autotools-dev, autoconf, automake, libtool, cups (>= 1.4.0) | cupsddk, patch (>= 2.5.9-3bpo1), findutils (>= 4.2.28), python-dev, python-all-dev (>= 2.6.6-3~), python-qt4, pyqt4-dev-tools, python-dbus (>= 0.80), python-qt4-dbus, libdbus-1-dev, libudev-dev [linux-any], policykit-1, fdupes, lsb-release, pyppd (>= 1.0.1), dh-autoreconf
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/h/hplip
+Files:
+ 78b7b0084ef9e350249f86c52a03b400 2439 hplip_3.13.9-1ubuntu0.1~ubuntu12.04.1.dsc
+ 8fcbbd0d3a0b76550f325bd6cf46d9d9 20878480 hplip_3.13.9.orig.tar.gz
+ 9ca4dd67e6b2ba3874621826cdc99c4a 108110 hplip_3.13.9-1ubuntu0.1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Mark Purcell <msp@debian.org>, Till Kamppeter <till.kamppeter@gmail.com>
+Homepage: http://hplipopensource.com/hplip-web/index.html
+Vcs-Svn: svn://anonscm.debian.org/pkg-hpijs/hplip/trunk/
+Package-List:
+ hpijs-ppds deb utils optional
+ hplip deb utils optional
+ hplip-data deb utils optional
+ hplip-dbg deb debug extra
+ hplip-doc deb doc optional
+ hplip-gui deb utils optional
+ libhpmud-dev deb libdevel optional
+ libhpmud0 deb libs optional
+ libsane-hpaio deb libs optional
+ printer-driver-hpcups deb text optional
+ printer-driver-hpijs deb text optional
+ printer-driver-postscript-hp deb utils optional
+Checksums-Sha1:
+ 88dc8c12b9aa4c4de5487d9f6feba80f4b42e43d 2439 hplip_3.13.9-1ubuntu0.1~ubuntu12.04.1.dsc
+ 208f4816661e35cc32850c0ed2b402e0c54350c6 20878480 hplip_3.13.9.orig.tar.gz
+ 67f1936ff3b45dd9ca73df68b9cf949413aa889c 108110 hplip_3.13.9-1ubuntu0.1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 145bb0d1301723a88c01b3f71ba2fbf8929b8f4d500836f9750e437d8577ebff 2439 hplip_3.13.9-1ubuntu0.1~ubuntu12.04.1.dsc
+ d95c729a79b0d28be3ecb6cba6df5a931b0788484c4d323963abc36d514bb120 20878480 hplip_3.13.9.orig.tar.gz
+ b6609174a5e9ffd52d782c5176c9f57bbf7af15c1b487b2db7e746327be6deca 108110 hplip_3.13.9-1ubuntu0.1~ubuntu12.04.1.debian.tar.gz
+
+Package: jquery
+Binary: libjs-jquery
+Version: 1.7.2+debian-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: web
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), yui-compressor
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/j/jquery
+Files:
+ abbc3189d40b9c2ebe3d5a349fe85c69 1530 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.dsc
+ cd39ef69e2b0e2aaaac2e1fed17f3d91 176210 jquery_1.7.2+debian.orig.tar.gz
+ a8c53736b28fcaee1c6c72ebae875fd9 6336 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Marcelo Jorge Vieira (metal) <metal@debian.org>, Steve Kemp <skx@debian.org>
+Homepage: http://jquery.com/
+Vcs-Browser: http://git.debian.org/?p=pkg-javascript/jquery.git
+Vcs-Git: git://git.debian.org/git/pkg-javascript/jquery.git
+Package-List:
+ libjs-jquery deb web optional
+Checksums-Sha1:
+ 15b0af27496c402c81883acbaa72b87ed74acec8 1530 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.dsc
+ 952666e56bb815c2ae6be07faf9f736835ae7ae5 176210 jquery_1.7.2+debian.orig.tar.gz
+ 0776c31b1ea6a99f11fedfcdabcd25b9ab0dd8f7 6336 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ ab236bd992591635758dcfdb329aedf525a164d04971b02d7e8db6e876104749 1530 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.dsc
+ 7350c3389849d911f7413bb0ec81b62b159755d7bbbb5775b7d2b0c843d32d9f 176210 jquery_1.7.2+debian.orig.tar.gz
+ 1132cc8712df2bba20a595085a0fab545211a0a39da4bcd59e3d0572700562a7 6336 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: open-iscsi
+Binary: open-iscsi, open-iscsi-utils, open-iscsi-udeb
+Version: 2.0.873-3ubuntu5~ubuntu12.04.1
+Priority: optional
+Section: net
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian iSCSI Maintainers <pkg-iscsi-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.0), bzip2, bison, flex, autotools-dev
+Architecture: any all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/o/open-iscsi
+Files:
+ 29ef34d0ed4d49f48cd717f47615a6d6 2367 open-iscsi_2.0.873-3ubuntu5~ubuntu12.04.1.dsc
+ 77ef4d5f5aceb4c7f0bef743fa7fc05c 671851 open-iscsi_2.0.873.orig.tar.gz
+ fa464ba493e0b21f26e1855af4409ddd 22650 open-iscsi_2.0.873-3ubuntu5~ubuntu12.04.1.debian.tar.gz
+Uploaders: Andrew Moise <chops@demiurgestudios.com>, Philipp Hug <debian@hug.cx>, Guido Günther <agx@sigxcpu.org>, Ritesh Raj Sarraf <rrs@debian.org>
+Homepage: http://www.open-iscsi.org/
+Vcs-Browser: http://git.debian.org/?p=pkg-iscsi/open-iscsi.git
+Vcs-Git: git://git.debian.org/git/pkg-iscsi/open-iscsi.git
+Package-List:
+ open-iscsi deb net optional
+ open-iscsi-udeb udeb debian-installer optional
+ open-iscsi-utils deb oldlibs extra
+Checksums-Sha1:
+ 3e558fb0aab5d4c3422aec50f5bdbbffd0e0c45b 2367 open-iscsi_2.0.873-3ubuntu5~ubuntu12.04.1.dsc
+ 406b737b143228c531c5491a6c2dec89fd26a924 671851 open-iscsi_2.0.873.orig.tar.gz
+ e25c9c5c2799af823ffa07579f2629f14c0140a6 22650 open-iscsi_2.0.873-3ubuntu5~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 63f3910ac461e190cedb5c1e062542f4b55d2f320e59f3b75ff60f397c7a192a 2367 open-iscsi_2.0.873-3ubuntu5~ubuntu12.04.1.dsc
+ c51f6fad45afb7c059f10776de721c6d5fd0336ff927daacea6a7e0a3ad02f18 671851 open-iscsi_2.0.873.orig.tar.gz
+ 13f7bcc6e5f057c22944ffcc38ca3fb173e0e20fb09d2d816d8660f2dc1f7e38 22650 open-iscsi_2.0.873-3ubuntu5~ubuntu12.04.1.debian.tar.gz
+
+Package: oxygencursors
+Binary: oxygen-cursor-theme, oxygen-cursor-theme-extra
+Version: 0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1
+Priority: optional
+Section: x11
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Sune Vuorela <sune@debian.org>
+Build-Depends: debhelper (>= 5.0.0), inkscape, x11-apps, quilt, cmake
+Architecture: all
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/main/o/oxygencursors
+Files:
+ 8c05b6702b7f327776395739f96bcafe 2114 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.dsc
+ 7dc0f45aacd225e93d70857c17cf4d66 103088 oxygencursors_0.0.2012-06-kde4.8.orig.tar.gz
+ 608f17536d29b9d9e1b40434e34ed34d 5374 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.diff.gz
+Uploaders: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Package-List:
+ oxygen-cursor-theme deb x11 optional
+ oxygen-cursor-theme-extra deb x11 optional
+Checksums-Sha1:
+ 8529abd05eeb3805e29bae07e2a067fe73377356 2114 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.dsc
+ fdf671afccee9f6c254a873f3b9fcef2f3f484f9 103088 oxygencursors_0.0.2012-06-kde4.8.orig.tar.gz
+ d9297e2cf5351c6c82cc0b03c4070e2893aa5870 5374 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.diff.gz
+Checksums-Sha256:
+ 80796faf6238b0b2aef1d4dbcabc737ae613158da7d911a702aaed147382bc3d 2114 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.dsc
+ 4d8f115cc3bf0a6d13b5129706299708a511dcd2bb4545eb637e4fb116c9cb1a 103088 oxygencursors_0.0.2012-06-kde4.8.orig.tar.gz
+ 6f04ccd007263f1bc11f478f6a22cc059ba0ca0ceb5cc25469192a2cc86af8d7 5374 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.diff.gz
+
+Package: pyppd
+Binary: pyppd
+Version: 1.0.1-1~ubuntu12.04.1
+Priority: extra
+Section: python
+Maintainer: Debian Printing Group <debian-printing@lists.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), python3-all
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/pyppd
+Files:
+ 8be08767317734c09c42ccefe5f4575d 1287 pyppd_1.0.1-1~ubuntu12.04.1.dsc
+ 26178f40e29738d2d8b945994c962fd4 14948 pyppd_1.0.1.orig.tar.gz
+ 1f809ac4a056243c15dccd4e6fb459d8 5624 pyppd_1.0.1-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Didier Raboud <odyx@debian.org>
+Homepage: http://pypi.python.org/pypi/pyppd
+Vcs-Browser: http://git.debian.org/?p=collab-maint/pyppd.git
+Vcs-Git: git://git.debian.org/collab-maint/pyppd.git
+Package-List:
+ pyppd deb python extra
+Checksums-Sha1:
+ fde49478816e5a199289bf7a74f236000bb82aa8 1287 pyppd_1.0.1-1~ubuntu12.04.1.dsc
+ b640f62d728d22736da4bf62a5b0a534ff6ce220 14948 pyppd_1.0.1.orig.tar.gz
+ f1fee3492169ef2f203e6212cb15a0b0bbc176db 5624 pyppd_1.0.1-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ c578e68e7c64b8ddab00b692226d95afbc9ee430ca3ab0b693b8786bc97c0cea 1287 pyppd_1.0.1-1~ubuntu12.04.1.dsc
+ 99bcbe2127e4f678b8bd543a02b91341af6008f71f7faae417546d2ebde4c645 14948 pyppd_1.0.1.orig.tar.gz
+ fc3fd432033d69c5e3f04baca39d55f479d43a1f7fdcc0af834bba0a0228d45f 5624 pyppd_1.0.1-1~ubuntu12.04.1.debian.tar.gz
+
+Package: python-geoip
+Binary: python-geoip
+Version: 1.3.2-1~12.04.1ubuntu1
+Priority: optional
+Section: python
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), libgeoip-dev (>= 1.4.7), python-all-dev (>= 2.3.5-11), python-setuptools
+Architecture: any
+Standards-Version: 3.9.5
+Format: 1.0
+Directory: pool/main/p/python-geoip
+Files:
+ 641d137687eb6edf7781fbeb46f8a801 2077 python-geoip_1.3.2-1~12.04.1ubuntu1.dsc
+ 6d1a82798b9f5f8448fca50296d974ba 20127 python-geoip_1.3.2.orig.tar.gz
+ 332821640ca57c34ad9bf289b7a979fe 2534 python-geoip_1.3.2-1~12.04.1ubuntu1.diff.gz
+Uploaders: Josselin Mouette <joss@debian.org>, Scott Kitterman <scott@kitterman.com>
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/python-geoip/trunk/
+Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/python-geoip/trunk/
+Package-List:
+ python-geoip deb python optional
+Checksums-Sha1:
+ 359a78cad42b28b40809c1f9d5ea955edc9970a3 2077 python-geoip_1.3.2-1~12.04.1ubuntu1.dsc
+ ce6025c28946ac5364f04e44ca0f73584b303df3 20127 python-geoip_1.3.2.orig.tar.gz
+ f118f97a71a6c94a2aed5f86dfe9e743464de34e 2534 python-geoip_1.3.2-1~12.04.1ubuntu1.diff.gz
+Checksums-Sha256:
+ 5a4a574c641c6889216abe2da5fdcfd2a5f8ecbf1c99cc61835dd8963457faab 2077 python-geoip_1.3.2-1~12.04.1ubuntu1.dsc
+ a890da6a21574050692198f14b07aa4268a01371278dfc24f71cd9bc87ebf0e6 20127 python-geoip_1.3.2.orig.tar.gz
+ 9a8b25c8576573196dd87e0f6da4ef6ee31a9aeacc29a1c6bae9936f3c005583 2534 python-geoip_1.3.2-1~12.04.1ubuntu1.diff.gz
+
+Package: rekonq
+Binary: rekonq, rekonq-dbg
+Version: 1.0-0ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: kde
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), pkg-kde-tools (>= 0.5.0~), cmake, kdelibs5-dev (>= 4:4.7), libqtwebkit-dev (>= 2.2.0), pkg-config
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/r/rekonq
+Files:
+ 9b72bb7fe9ceec1765dae14c99cd447a 1598 rekonq_1.0-0ubuntu1~ubuntu12.04.1.dsc
+ ca7b86ad4a778cbba52a14192865c7b0 3848577 rekonq_1.0.orig.tar.bz2
+ 2885e1a815a3e738af1eed4c081ebae0 8674 rekonq_1.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Felix Geyer <debfx-pkg@fobos.de>, José Manuel Santamaría Lema <panfaust@gmail.com>
+Dm-Upload-Allowed: yes
+Homepage: http://rekonq.kde.org/
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/rekonq.git
+Vcs-Git: git://git.debian.org/pkg-kde/kde-extras/rekonq.git
+Package-List:
+ rekonq deb web optional
+ rekonq-dbg deb debug extra
+Checksums-Sha1:
+ a4bb725a5b2fa2a735bad76d6db56f406046db44 1598 rekonq_1.0-0ubuntu1~ubuntu12.04.1.dsc
+ b5f20c59dc21d57a0557104999d2a0e0423a7611 3848577 rekonq_1.0.orig.tar.bz2
+ c8aa16c1ab2aa5aa2e96f3e9d284a1253268f91d 8674 rekonq_1.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 38e9948fadb8931c68717d9de440b7de53a5f71e31b4560e8b0fe87a410fcccd 1598 rekonq_1.0-0ubuntu1~ubuntu12.04.1.dsc
+ 5970acebc9f2a35eb49152eb0d015c1cb8d85929ee6ae3f8a11869cf5391659e 3848577 rekonq_1.0.orig.tar.bz2
+ 52acbd88fbaf07601b559777b633ae45cd6fb8d20027330a980c022cacddd145 8674 rekonq_1.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: tcpdump
+Binary: tcpdump
+Version: 4.5.1-2ubuntu1~ubuntu12.04.1
+Priority: standard
+Section: net
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Romain Francoise <rfrancoise@debian.org>
+Build-Depends: dpkg-dev (>= 1.16.1~), debhelper (>= 8.9.4~), libpcap0.8-dev (>= 0.9.3), libssl-dev, autotools-dev, autoconf, dh-apparmor
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/t/tcpdump
+Files:
+ da6b31a8e3c42869bce5a17f1edc0082 2093 tcpdump_4.5.1-2ubuntu1~ubuntu12.04.1.dsc
+ 973a2513d0076e34aa9da7e15ed98e1b 1024455 tcpdump_4.5.1.orig.tar.gz
+ 4023a7abbfebcf88924dd06bd926da40 14160 tcpdump_4.5.1-2ubuntu1~ubuntu12.04.1.debian.tar.xz
+Homepage: http://www.tcpdump.org/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=users/rfrancoise/tcpdump.git
+Vcs-Git: git://anonscm.debian.org/users/rfrancoise/tcpdump.git
+Package-List:
+ tcpdump deb net optional arch=any
+Checksums-Sha1:
+ 14ca310785012c6c625ef471428d994b0c1aa69b 2093 tcpdump_4.5.1-2ubuntu1~ubuntu12.04.1.dsc
+ 46d5ec107c6a1b262ad8da799f74c5d01cce8815 1024455 tcpdump_4.5.1.orig.tar.gz
+ 8b42968141794553e4e5502c40b3cf36b40515e7 14160 tcpdump_4.5.1-2ubuntu1~ubuntu12.04.1.debian.tar.xz
+Checksums-Sha256:
+ 5a36c7013423c52fc2c9fd734cf4e7e4b7d0ad54fb7d124020e69e688d38cfec 2093 tcpdump_4.5.1-2ubuntu1~ubuntu12.04.1.dsc
+ 14ab39657128f3a650aed4cf455f76c7590601087b6101c253d698f6e73f0b96 1024455 tcpdump_4.5.1.orig.tar.gz
+ 68044a8b7e99aa1dad31746b08798fe8ba720cfbc71c077bc3d1e97544b41e7a 14160 tcpdump_4.5.1-2ubuntu1~ubuntu12.04.1.debian.tar.xz
+
+Package: underscore
+Binary: libjs-underscore, node-underscore
+Version: 1.3.3-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: web
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Build-Depends: cdbs, debhelper, dh-buildinfo, yui-compressor
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/u/underscore
+Files:
+ ed63bc50819afff5701e3437df260237 2161 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.dsc
+ ad54c26e22c3b6a5f85ed8c805a13b7f 119288 underscore_1.3.3.orig.tar.gz
+ 22973ba2adf706036d1708b7fb8deb6c 5352 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Jonas Smedegaard <dr@jones.dk> , David Paleino <dapal@debian.org>
+Homepage: http://documentcloud.github.com/underscore/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/underscore.git
+Vcs-Git: git://git.debian.org/git/collab-maint/underscore
+Package-List:
+ libjs-underscore deb web optional
+ node-underscore deb web optional
+Checksums-Sha1:
+ c301603676794ebc2f1cba05ec1a1acb126d373b 2161 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.dsc
+ 91e3010ca2b610c06635451299fa8f1f9c3e4248 119288 underscore_1.3.3.orig.tar.gz
+ b7098fbdb1acd6245905ebdcc4c6be488d075a5c 5352 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ d2cd3557eb133d43916711c7391fead0a156f2f183afeeb016f6873b4512cb13 2161 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.dsc
+ 9de06715525260a669fc5172b4e92347a7e145fd10bac3f089fcce1e8f8422fb 119288 underscore_1.3.3.orig.tar.gz
+ b8dc6de0c1566e269733c821c9f4e267945bdfcc7453d6616c0c1acda67d409c 5352 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+

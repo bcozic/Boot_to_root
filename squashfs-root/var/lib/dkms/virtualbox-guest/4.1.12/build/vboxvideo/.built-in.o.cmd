@@ -1,0 +1,1 @@
+cmd_/var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/built-in.o :=  rm -f /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/built-in.o; ar rcsD /var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/built-in.o

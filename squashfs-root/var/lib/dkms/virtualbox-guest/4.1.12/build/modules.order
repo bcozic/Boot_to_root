@@ -1,0 +1,3 @@
+kernel//var/lib/dkms/virtualbox-guest/4.1.12/build/vboxguest/vboxguest.ko
+kernel//var/lib/dkms/virtualbox-guest/4.1.12/build/vboxsf/vboxsf.ko
+kernel//var/lib/dkms/virtualbox-guest/4.1.12/build/vboxvideo/vboxvideo.ko

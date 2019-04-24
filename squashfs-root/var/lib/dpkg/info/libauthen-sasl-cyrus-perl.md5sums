@@ -1,0 +1,9 @@
+8aaa83a58d72bcd745d6788ac7b7634a  usr/lib/perl5/Authen/SASL/Cyrus.pm
+effcb6ba9233c257947317c2acd034f8  usr/lib/perl5/Authen/SASL/Cyrus.pod
+677a973080d9ebf9687b370aba87ad56  usr/lib/perl5/Authen/SASL/Cyrus/Security.pm
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/perl5/auto/Authen/SASL/Cyrus/Cyrus.bs
+15a33e174131a84aed6fbc72424bf349  usr/lib/perl5/auto/Authen/SASL/Cyrus/Cyrus.so
+8cb4d7bf9de953f43bcdb81f53efcfdb  usr/share/doc/libauthen-sasl-cyrus-perl/README
+d0bf71c258de3889958ffe9977faf26c  usr/share/doc/libauthen-sasl-cyrus-perl/changelog.Debian.gz
+fa6f8d4df38b043344f22e742765e2e6  usr/share/doc/libauthen-sasl-cyrus-perl/copyright
+34faecd3a0079b5f8fece1d8c86abc9b  usr/share/man/man3/Authen::SASL::Cyrus.3pm.gz

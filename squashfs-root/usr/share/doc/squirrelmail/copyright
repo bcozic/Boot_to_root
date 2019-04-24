@@ -1,0 +1,32 @@
+This package was debianized by Sam Johnston <samj@debian.org> on
+Fri, 14 Sep 2001 18:28:01 +1000. Current maintainer is Jeroen van
+Wolffelaar <jeroen@wolffelaar.nl> with co-maintainers Thijs
+Kinkhorst <thijs@debian.org> and Sam Johnston <samj@debian.org>.
+
+It was downloaded from http://www.squirrelmail.org/download.php
+
+Upstream Authors: The SquirrelMail Project Team <squirrelmail-devel@lists.sourceforge.net>
+
+Copyright:
+
+   Copyright (C) 1999-2010 The SquirrelMail Project Team
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+
+On Debian GNU/Linux systems, the complete text of the GNU General Public
+License can be found in the `/usr/share/common-licenses' directory.
+
+The Debian packaging of SquirrelMail is licenced under the same terms
+as SquirrelMail itself.

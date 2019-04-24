@@ -1,0 +1,3 @@
+/etc/profile.d/Z97-byobu.sh
+/etc/byobu/socketdir
+/etc/byobu/backend

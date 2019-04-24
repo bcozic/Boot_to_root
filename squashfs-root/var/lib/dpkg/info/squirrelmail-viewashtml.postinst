@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+	configure)
+        squirrelmail-configure --remove-plugin view_as_html
+        squirrelmail-configure --install-plugin view_as_html
+	;;
+	*)
+	;;
+esac
+
+
+
+exit 0

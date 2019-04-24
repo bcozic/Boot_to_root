@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/init.d/vsftpd" ] && [ ! -L "/etc/init.d/vsftpd" ]; then
+		if [ "`md5sum \"/etc/init.d/vsftpd\" | sed -e \"s/ .*//\"`" != \
+		     "`dpkg-query -W -f='${Conffiles}' vsftpd | sed -n -e \"\\\\' /etc/init.d/vsftpd '{s/ obsolete$//;s/.* //p}\"`" ]
+		then
+			echo "Obsolete conffile /etc/init.d/vsftpd has been modified by you, renaming to .dpkg-bak"
+			mv -f "/etc/init.d/vsftpd" "/etc/init.d/vsftpd.dpkg-bak"
+		else
+			rm -f "/etc/init.d/vsftpd"
+		fi
+	fi
+fi
+# End automatically added section

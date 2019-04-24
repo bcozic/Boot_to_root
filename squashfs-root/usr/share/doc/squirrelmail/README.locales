@@ -1,0 +1,28 @@
+The locales (translations) for the SquirrelMail package are provided in
+the package "squirrelmail-locales" on which the "squirrelmail" package
+recommends. You need to install that package as well if you want to use
+SquirrelMail in languages other than English.
+
+You may need to reconfigure locales with:
+  dpkg-reconfigure locales
+to make alternative languages work.
+
+In some cases it might also be needed to restart Apache after you've
+upgraded or added locales, because of some internal caching of locale
+information by Apache.
+
+=== Locale with correct charset needs to be configured ===
+
+The locale of the language file you want to use has to be configured
+on the server.
+E.g., to make the "French" translation work, you need to setup the
+fr_FR.ISO-8859-1 locale. Currently it will not work if you only have
+the fr_FR.UTF-8 locale enabled, you need the ISO-8859-1 one as well.
+
+You can generate locales using:
+  locale-gen LOCALE
+You can see which locale names get used for a given language in the
+setup.php file of the translations,
+e.g. /usr/share/squirrelmail/locale/fr_FR/setup.php for fr_FR.
+See the "locale" program to display installed locales, e.g. "locale -a -v".
+
