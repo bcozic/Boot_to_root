@@ -1,1 +1,0 @@
-../../../../../share/pyshared/keyring/backends/__init__.py

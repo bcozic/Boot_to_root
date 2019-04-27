@@ -1,1 +1,0 @@
-../../../../../../share/pyshared/Crypto/SelfTest/PublicKey/__init__.py

@@ -1,1 +1,0 @@
-../../../../share/pyshared/chardet/latin1prober.py

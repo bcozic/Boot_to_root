@@ -1,2 +1,0 @@
-apache2-mpm-prefork: binary-without-manpage usr/sbin/apache2
-apache2-mpm-prefork: debug-package-should-be-named-dbg usr/lib/debug/usr/

@@ -1,2 +1,0 @@
-# avoiding micro-package, private library is not split out
-ntfs-3g: package-name-doesnt-match-sonames

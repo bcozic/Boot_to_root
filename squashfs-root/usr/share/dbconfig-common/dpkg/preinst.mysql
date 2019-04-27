@@ -1,2 +1,0 @@
-dbc_hardcoded_dbtype=mysql
-. /usr/share/dbconfig-common/dpkg/preinst

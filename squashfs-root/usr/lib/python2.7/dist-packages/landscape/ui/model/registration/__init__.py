@@ -1,1 +1,0 @@
-../../../../../../../share/pyshared/landscape/ui/model/registration/__init__.py

@@ -1,1 +1,0 @@
-../../../../../share/pyshared/Crypto/SelfTest/st_common.py

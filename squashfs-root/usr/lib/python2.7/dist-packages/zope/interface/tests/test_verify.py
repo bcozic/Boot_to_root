@@ -1,1 +1,0 @@
-../../../../../../share/pyshared/zope/interface/tests/test_verify.py

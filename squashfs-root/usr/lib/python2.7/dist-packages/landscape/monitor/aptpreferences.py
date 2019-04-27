@@ -1,1 +1,0 @@
-../../../../../share/pyshared/landscape/monitor/aptpreferences.py

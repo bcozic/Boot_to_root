@@ -1,1 +1,0 @@
-../../../../../../share/pyshared/Crypto/SelfTest/Hash/test_SHA512.py

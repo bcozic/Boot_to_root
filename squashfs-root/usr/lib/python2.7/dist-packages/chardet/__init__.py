@@ -1,1 +1,0 @@
-../../../../share/pyshared/chardet/__init__.py

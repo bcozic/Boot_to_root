@@ -1,1 +1,0 @@
-../../../../share/pyshared/keyring/py25compat.py
