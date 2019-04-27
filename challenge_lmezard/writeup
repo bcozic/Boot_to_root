@@ -1,0 +1,24 @@
+En se connectant en ftp avec le compte de lmezard on peut recuperer le fichier fun que l'on a pu voir dans le home de lmezard sur la vm (c'est tout de meme plus pratique de l'avoir hors de la vm)
+ftp> passive
+ftp> ls
+-rwxr-x---    1 1001     1001           96 Oct 15  2015 README
+-rwxr-x---    1 1001     1001       808960 Oct 08  2015 fun
+ftp> get fun
+
+On peut voir dans le fichier des packets d'un fichier C mit dans le desordre
+fun est en fait un fichier tar, donc on commence par le decompresser
+
+> tar xvf fun
+
+Puis un petit script pour afficher le fichier C dans l'ordre en ne gardant que ce qui est necessaire (c'est a dire en enlevant toutes les fonctions useless)
+
+> gcc script.c
+> a.out script ft_fun
+
+On peut constater que la sortie serait:
+"MY PASSWORD IS: Iheartpwnage
+Now SHA-256 it and submit"
+
+> echo -n "Iheartpwnage" | openssl dgst -sha256
+
+Le mot de passe de Laurie est donc '330b845f32185747e4f8ca15d40ca59796035c89ea809fb5d30f4da83ecf45a4'
