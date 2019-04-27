@@ -67,215 +67,207 @@ void phase_1(undefined4 param_1)
 void phase_2(undefined4 param_1)
 
 {
-  int iVar1;
-  int aiStack32 [7];
-  
-  read_six_numbers(param_1,aiStack32 + 1);
-  if (aiStack32[1] != 1) {
-    explode_bomb();
-  }
-  iVar1 = 1;
-  do {
-    if (aiStack32[iVar1 + 1] != (iVar1 + 1) * aiStack32[iVar1]) {
-      explode_bomb();
-    }
-    iVar1 = iVar1 + 1;
-  } while (iVar1 < 6);
-  return;
-}
+	int i;
+	int tab [7];
+	
+	read_six_numbers(param_1,tab + 1);
+	if (tab[1] != 1)
+	{
+		explode_bomb();
+	}
+	i = 1;
+	do {
+		if (tab[i + 1] != (i + 1) * tab[i])
+		{
+			explode_bomb();
+		}
+		i = i + 1;
+		} while (i < 6);
+	return;
+} // 1 2 6 24 120 720
 
 void phase_3(char *param_1)
 
 {
-  int iVar1;
-  char cVar2;
-  uint local_10;
-  char local_9;
-  int local_8;
-  
-  iVar1 = sscanf(param_1,"%d %c %d",&local_10,&local_9,&local_8);
-  if (iVar1 < 3) {
-    explode_bomb();
-  }
-  switch(local_10) {
-  case 0:
-    cVar2 = 'q';
-    if (local_8 != 0x309) {
-      explode_bomb();
-    }
-    break;
-  case 1:
-    cVar2 = 'b';
-    if (local_8 != 0xd6) {
-      explode_bomb();
-    }
-    break;
-  case 2:
-    cVar2 = 'b';
-    if (local_8 != 0x2f3) {
-      explode_bomb();
-    }
-    break;
-  case 3:
-    cVar2 = 'k';
-    if (local_8 != 0xfb) {
-      explode_bomb();
-    }
-    break;
-  case 4:
-    cVar2 = 'o';
-    if (local_8 != 0xa0) {
-      explode_bomb();
-    }
-    break;
-  case 5:
-    cVar2 = 't';
-    if (local_8 != 0x1ca) {
-      explode_bomb();
-    }
-    break;
-  case 6:
-    cVar2 = 'v';
-    if (local_8 != 0x30c) {
-      explode_bomb();
-    }
-    break;
-  case 7:
-    cVar2 = 'b';
-    if (local_8 != 0x20c) {
-      explode_bomb();
-    }
-    break;
-  default:
-    cVar2 = 'x';
-    explode_bomb();
-  }
-  if (cVar2 != local_9) {
-    explode_bomb();
-  }
-  return;
-}
+	char c;
+	uint nb1;
+	char cara;
+	int nb2;
+	
+	if (sscanf(param_1,"%d %c %d",&nb1,&cara,&nb2) < 3)
+		explode_bomb();
+	switch(nb1) {
+	case 0:
+		c = 'q';
+		if (nb2 != 0x309) {
+		explode_bomb();
+		}
+		break;
+	case 1:
+		c = 'b';
+		if (nb2 != 0xd6) {
+		explode_bomb();
+		}
+		break;
+	case 2:
+		c = 'b';
+		if (nb2 != 0x2f3) {
+		explode_bomb();
+		}
+		break;
+	case 3:
+		c = 'k';
+		if (nb2 != 0xfb) {
+		explode_bomb();
+		}
+		break;
+	case 4:
+		c = 'o';
+		if (nb2 != 0xa0) {
+		explode_bomb();
+		}
+		break;
+	case 5:
+		c = 't';
+		if (nb2 != 0x1ca) {
+		explode_bomb();
+		}
+		break;
+	case 6:
+		c = 'v';
+		if (nb2 != 0x30c) {
+		explode_bomb();
+		}
+		break;
+	case 7:
+		c = 'b';
+		if (nb2 != 0x20c) {
+		explode_bomb();
+		}
+		break;
+	default:
+		c = 'x';
+		explode_bomb();
+	}
+	if (c != cara) {
+		explode_bomb();
+	}
+	return;
+} // 1 b 214
 
 
-int func4(int param_1)
+int func4(int nb)
 
 {
-  int iVar1;
-  int iVar2;
-  
-  if (param_1 < 2) {
-    iVar2 = 1;
-  }
-  else {
-    iVar1 = func4(param_1 + -1);
-    iVar2 = func4(param_1 + -2);
-    iVar2 = iVar2 + iVar1;
-  }
-  return iVar2;
-}
+	int ret;
+	
+	if (nb < 2) {
+		ret = 1;
+	}
+	else {
+		ret = func4(nb - 1) + func4(nb - 2);
+		ret = ret + iVar1;
+	}
+	return ret;
+} // fibonacci
 
 
-void phase_4(char *param_1)
+void phase_4(char *str)
 
 {
-  int iVar1;
-  int local_8;
-  
-  iVar1 = sscanf(param_1,"%d",&local_8);
-  if ((iVar1 != 1) || (local_8 < 1)) {
-    explode_bomb();
-  }
-  iVar1 = func4(local_8);
-  if (iVar1 != 0x37) {
-    explode_bomb();
-  }
-  return;
-}
+	int iVar1;
+	int nb;
+	
+	if ((sscanf(str,"%d",&nb) != 1) || (nb < 1)) {
+		explode_bomb();
+	}
+	iVar1 = func4(nb);
+	if (iVar1 != 0x37) {
+		explode_bomb();
+	}
+	return;
+} // 9
 
-void phase_5(int param_1)
+char	str_phrase_5[] = "isrveawhobpnutfg"
 
-{
-  int iVar1;
-  undefined local_c [6];
-  undefined local_6;
-  
-  iVar1 = strlen(param_1);
-  if (iVar1 != 6) {
-    explode_bomb();
-  }
-  iVar1 = 0;
-  do {
-    local_c[iVar1] = (&array.123)[(int)(char)(*(byte *)(iVar1 + param_1) & 0xf)];
-    iVar1 = iVar1 + 1;
-  } while (iVar1 < 6);
-  local_6 = 0;
-  iVar1 = strings_not_equal(local_c,"giants");
-  if (iVar1 != 0) {
-    explode_bomb();
-  }
-  return;
-}
-
-
-void phase_6(undefined4 param_1)
+void phase_5(int str)
 
 {
-  int *piVar1;
-  int iVar2;
-  int *piVar3;
-  int iVar4;
-  int *local_34 [6];
-  int local_1c [6];
-  
-  read_six_numbers(param_1,local_1c);
-  iVar4 = 0;
-  do {
-    if (5 < local_1c[iVar4] - 1U) {
-      explode_bomb();
-    }
-    iVar2 = iVar4 + 1;
-    if (iVar2 < 6) {
-      do {
-        if (local_1c[iVar4] == local_1c[iVar2]) {
-          explode_bomb();
-        }
-        iVar2 = iVar2 + 1;
-      } while (iVar2 < 6);
-    }
-    iVar4 = iVar4 + 1;
-  } while (iVar4 < 6);
-  iVar4 = 0;
-  do {
-    iVar2 = 1;
-    piVar3 = (int *)node1;
-    if (1 < local_1c[iVar4]) {
-      piVar3 = (int *)node1;
-      do {
-        piVar3 = (int *)piVar3[2];
-        iVar2 = iVar2 + 1;
-      } while (iVar2 < local_1c[iVar4]);
-    }
-    local_34[iVar4] = piVar3;
-    iVar4 = iVar4 + 1;
-  } while (iVar4 < 6);
-  iVar4 = 1;
-  piVar3 = local_34[0];
-  do {
-    piVar1 = local_34[iVar4];
-    *(int **)(piVar3 + 2) = piVar1;
-    iVar4 = iVar4 + 1;
-    piVar3 = piVar1;
-  } while (iVar4 < 6);
-  piVar1[2] = 0;
-  iVar4 = 0;
-  do {
-    if (*local_34[0] < *(int *)local_34[0][2]) {
-      explode_bomb();
-    }
-    local_34[0] = (int *)local_34[0][2];
-    iVar4 = iVar4 + 1;
-  } while (iVar4 < 5);
-  return;
+	int iVar1;
+	undefined local_c [6];
+	undefined local_6;
+	
+	if (strlen(str) != 6) {
+		explode_bomb();
+	}
+	for (int i = 0; i < 6; i++)
+		local_c[i] = (&array.123)[(int)(char)(*(byte *)(i + str) & 0xf)];
+	}
+	local_6 = 0;
+	if (strings_not_equal(local_c,"giants") != 0) {
+		explode_bomb();
+	}
+	return;
+} // 0xXf 0xX0 0xX5 0xXb 0xXd 0xX1 -> exemple: o0Ekm1
+
+node1[] = 0x000000fd, 0x00000001;
+
+void phase_6(char *str)
+
+{
+	int *piVar1;
+	int iVar2;
+	int *piVar3;
+	int iVar4;
+	int *local_34 [6];
+	int tab_in [6];
+	
+	read_six_numbers(str,tab_in);
+	for (int i = 0; i < 6; i++)
+	{
+		if (5 < tab_in[i] - 1U)
+		{
+			explode_bomb();
+		} // 0 < nb < 5
+		if (i + 1 < 6)
+		{
+			for (int j = i + 1; j < 6; j++)
+			{
+				if (tab_in[i] == tab_in[j]
+					explode_bomb();
+			}
+		} // only one occurencd
+	}
+	for (int i = 0; i < 6; i++)
+		piVar3 = (int *)node1;
+		if (1 < tab_in[i])
+		{
+			piVar3 = (int *)node1;
+			for (int i = 1; tab_in[i] > i; i++)
+			{
+				piVar3 = (int *)piVar3[2];
+			}
+		}
+		local_34[i] = piVar3;
+	}
+	iVar4 = 1;
+	piVar3 = local_34[0];
+	do {
+		piVar1 = local_34[iVar4];
+		*(int **)(piVar3 + 2) = piVar1;
+		iVar4 = iVar4 + 1;
+		piVar3 = piVar1;
+	} while (iVar4 < 6);
+	piVar1[2] = 0;
+	iVar4 = 0;
+	do {
+		if (*local_34[0] < *(int *)local_34[0][2]) {
+		explode_bomb();
+		}
+		local_34[0] = (int *)local_34[0][2];
+		iVar4 = iVar4 + 1;
+	} while (iVar4 < 5);
+	return;
 }
 
 int fun7(int *param_1,int param_2)
