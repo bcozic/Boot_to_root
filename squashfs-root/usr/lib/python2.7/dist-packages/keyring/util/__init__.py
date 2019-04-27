@@ -1,1 +1,0 @@
-../../../../../share/pyshared/keyring/util/__init__.py

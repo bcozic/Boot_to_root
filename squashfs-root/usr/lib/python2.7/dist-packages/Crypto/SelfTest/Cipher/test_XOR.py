@@ -1,1 +1,0 @@
-../../../../../../share/pyshared/Crypto/SelfTest/Cipher/test_XOR.py

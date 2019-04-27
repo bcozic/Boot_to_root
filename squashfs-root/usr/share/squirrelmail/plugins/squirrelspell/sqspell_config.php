@@ -1,1 +1,0 @@
-/etc/squirrelmail/sqspell_config.php

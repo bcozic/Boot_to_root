@@ -1,1 +1,0 @@
-../../../../../../../share/pyshared/zope/interface/common/tests/__init__.py

@@ -1,2 +1,0 @@
-dbc_hardcoded_dbtype=sqlite
-. /usr/share/dbconfig-common/dpkg/postrm

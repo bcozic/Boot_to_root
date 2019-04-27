@@ -1,1 +1,0 @@
-../../../../share/pyshared/keyring/cli.py

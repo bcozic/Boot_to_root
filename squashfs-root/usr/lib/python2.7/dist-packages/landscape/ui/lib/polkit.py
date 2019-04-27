@@ -1,1 +1,0 @@
-../../../../../../share/pyshared/landscape/ui/lib/polkit.py

@@ -1,1 +1,0 @@
-../../../../../share/pyshared/Crypto/Util/py21compat.py

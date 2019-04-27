@@ -1,1 +1,0 @@
-../../../../share/pyshared/debian/changelog.py

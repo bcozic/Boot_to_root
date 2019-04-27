@@ -1,1 +1,0 @@
-../../../../../../share/pyshared/zope/interface/common/idatetime.py

@@ -1,1 +1,0 @@
-../../../../../../share/pyshared/Crypto/SelfTest/Util/test_asn1.py

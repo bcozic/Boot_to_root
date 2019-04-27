@@ -1,6 +1,0 @@
-#! /bin/sh
-set -e
-if [ "$1" = rtupdate ]; then
-	pyclean -p ubiquity-frontend-debconf /usr/lib/ubiquity
-	pycompile -p ubiquity-frontend-debconf -V 2.7- /usr/lib/ubiquity
-fi

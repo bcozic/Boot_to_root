@@ -1,1 +1,0 @@
-../../../../../../../share/pyshared/Crypto/SelfTest/Random/OSRNG/__init__.py

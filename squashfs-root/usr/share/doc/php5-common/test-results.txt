@@ -1,1 +1,0 @@
-nocheck found in DEB_BUILD_OPTIONS or unsupported architecture

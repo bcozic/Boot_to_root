@@ -1,1 +1,0 @@
-../../../../share/pyshared/HweSupportStatus/__init__.py
