@@ -1,0 +1,81 @@
+Nous avons donc ici un executable bomb
+On le desassemble avec ghidra (c'est tout de meme plus rapide qu'entierement a la main)
+
+On a donc un programme qui va soit lire un fichier soit recuperer l'input sur l'entree standard
+Il s'agit d'une bombe que l'on va devoir desamorcer etape par etape:
+
+phase_1:
+
+Ici pas de difficultee c'est une comparaison en dur:
+"Public speaking is very easy."
+
+phase_2:
+
+Ici on nous demande 6 nombre qui sont tout simplement une suite de factorielle
+Par exemple le dernier: tab[5] = 6 * (tab[4] = 5 * (tab[3] = 4 * (tab[2] = 3 * (tab[1] = 2 * (tab[0]))))) ou tab[0] est set a 1
+Ce qui nous donne: tab[5] = 6 * 5 * 4 * 3 * 2 * 1
+"1 2 6 24 120 720"
+
+phase_3:
+
+Ici on nous demande un nombre, un caractere puis un autre nombre
+On remarque tout d'abord un switch case sur le premier nombre, ici on peut choisir n'importe quel nombre entre 0 et 7
+Dans chacun des switch un caractere va etre set pour etre comparer a notre 2eme entree, du coup si on avait choisir 0 on devra entrer le caractere 'q'
+Puis encore dans les switch la derniere entree va etre comparer a un nombre, encore une fois on aura seulement a entrer ce nombre comme derniere entree dans le cas precedent ce serait 777
+"1 b 214"
+
+phase_4:
+
+Ici une seule entree (pour l'instant): un nombre
+Sur lequel va etre applique une fonction qui va renvoyer le Xieme element de fibonacci et le comparer a la valeur 55
+Ici 1 et 0 valent 1, du coup au lieu du 10eme element de fibonacci ce sera le 9eme
+"9"
+
+phase_5:
+
+Ici on nous demande une chaine de 6 caracteres
+Sur chacun va etre applique un modulo 16, puis remplace par le caractere a l'idx le nombre obtenu d'une chaine de caractere globale "isrveawhobpnutfg" (de taille 16, etonnant)
+Avec cette nouvelle chaine (enfin plutot la notre modifiee), ce n'est plus qu'un strcmp avec "giants"
+Nous devons donc utilise des caractere dont la valeur hexa est: 0xXf 0xX0 0xX5 0xXb 0xXd 0xX1
+"opekma"
+
+phase_6:
+
+Sur celui ci on nous demande 6 nombres entre 1 et 6 sans doublon
+Il s'agira tout simplement de trier une liste chainee par rapport a sa premiere valeur par ordre decroissant
+"4 2 6 3 1 5"
+
+secrect_phase:
+
+Ici on a pu remarquer la phase_defused est appelee apres chaques phases
+Et lorsque l'on a reussi toutes les phases
+Elle va aller regarder dans toutes les entrees faites jusqu'a present qui ont ete stockees dans la chaine input_strings a input_strings + 240
+Et regarder si l'on a bien comme entree un nombre et une chaine de caractere qui est "austinpowers"
+On a pu remarque que jusqu'a present dans la fonction skip que les entrees etaient stockees a input_strings + (num_input_strings * 80), avec num_input_strings = numero de phase - 1
+du coup on sait que l'on regarde a input_strings + 240 -> input_strings + (num_input_strings * 80) -> num_input_strings = 3
+La chaine "austinpowers" devra donc etre entree a la phase_4 pour acceder a la secrect_phase
+Ce qui est plutot pratique c'est la seule qui ne demandait qu'un nombre (premiere entree cite ci-dessus) et l'une des rares ou le nombre d'entrees n'est pas verifie
+
+Maintenant arrive dans la secrect_phase, on nous demande un nombre qui sera envoye dans une fonction d'ou le retour doit etre 7
+Cette fonction va retourner un nombre en fonction de la place sur l'arbre de celui envoyer
+On devrait obtenir une sortie du genre selon le noeud auquel on s'arrete:
+					inferieur <- 0 -> superieur
+				0								1
+		0				1				2				3
+	0		1		2		3		4		5		6		7
+
+On devra donc (au plus court) prendre le noeud de droite puis encore droite et une derniere fois droite pour etre egal au nombre qui y est stoke, ce qui est plutot pratique, il est superieur aux 3 precedents
+Et correspond egalement a une autre contrainte dont je n'ai pas encore parler: etre inferieur ou egal a 1001
+"1001"
+
+
+Pour le mot de passe de thor on se retrouve avec beaucoup de possibilites, avec les indices donnes ils nous reste la phase 5 qui a beaucoup (beaucoup) de possibilites, vu que l'on connait la premiere lettre,
+on va supposer que les autres sont egalement des lettres minuscules, ce qui reduit les possibilites a 4 :
+opekma
+opukma
+opekmq
+opukmq
+
+Et bingo c'etaient bien l'un d'entre eux (PS: sans doute une erreur dans le mot de passe mais l'avant dernier et l'avant avant dernier caractere sont inverses):
+
+Publicspeakingisveryeasy.126241207201b2149opekmq426135

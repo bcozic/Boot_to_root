@@ -210,17 +210,22 @@ void phase_5(int str)
 	return;
 } // 0xXf 0xX0 0xX5 0xXb 0xXd 0xX1 -> exemple: o0Ekm1
 
-node1[] = 0x000000fd, 0x00000001;
+struct s_node
+{
+	int	
+	int	
+	struct s_node *next;
+};
 
 void phase_6(char *str)
 
 {
 	int *piVar1;
 	int iVar2;
-	int *piVar3;
 	int iVar4;
-	int *local_34 [6];
+	struct s_node *s_table [6];
 	int tab_in [6];
+	struct s_node *current;
 	
 	read_six_numbers(str,tab_in);
 	for (int i = 0; i < 6; i++)
@@ -239,61 +244,61 @@ void phase_6(char *str)
 		} // only one occurencd
 	}
 	for (int i = 0; i < 6; i++)
-		piVar3 = (int *)node1;
+	{
+		current = (int *)node1; -> first_elem
 		if (1 < tab_in[i])
 		{
-			piVar3 = (int *)node1;
+			current = node1;
 			for (int i = 1; tab_in[i] > i; i++)
 			{
-				piVar3 = (int *)piVar3[2];
+				current = current->next;
 			}
 		}
-		local_34[i] = piVar3;
+		s_table[i] = current;
 	}
-	iVar4 = 1;
-	piVar3 = local_34[0];
-	do {
-		piVar1 = local_34[iVar4];
-		*(int **)(piVar3 + 2) = piVar1;
-		iVar4 = iVar4 + 1;
-		piVar3 = piVar1;
-	} while (iVar4 < 6);
+	current = s_table[0];
+	for (int i = 1; i < 6; i++)
+	{
+		current->next = s_table[i];
+		current = s_table[i];
+	}
 	piVar1[2] = 0;
-	iVar4 = 0;
-	do {
-		if (*local_34[0] < *(int *)local_34[0][2]) {
-		explode_bomb();
+	for (int i = 0; i < 5; i++)
+	{
+		if (*s_table[0] < s_table[0]->next) {
+			explode_bomb();
 		}
-		local_34[0] = (int *)local_34[0][2];
-		iVar4 = iVar4 + 1;
-	} while (iVar4 < 5);
+		s_table[0] = s_table[0]->next;
+	}
 	return;
-}
+} // sort chain list -> 4 2 6 3 1 5
 
-int fun7(int *param_1,int param_2)
+int fun7(int *param_1,int param_2) // 1001
 
 {
-  int iVar1;
-  
-  if (param_1 == (int *)0x0) {
-    iVar1 = -1;
-  }
-  else {
-    if (param_2 < *param_1) {
-      iVar1 = fun7(param_1[1],param_2);
-      iVar1 = iVar1 * 2;
-    }
-    else {
-      if (param_2 == *param_1) {
-        iVar1 = 0;
-      }
-      else {
-        iVar1 = fun7(param_1[2],param_2);
-        iVar1 = iVar1 * 2 + 1;
-      }
-    }
-  }
-  return iVar1;
+	int iVar1;
+	
+	if (param_1 == (int *)0x0) {
+		iVar1 = -1;
+	}
+	else
+	{
+		if (param_2 < *param_1) {
+			iVar1 = fun7(param_1[1],param_2);
+			iVar1 = iVar1 * 2;
+		}
+		else
+		{
+			if (param_2 == *param_1) {
+				iVar1 = 0;
+			}
+			else {
+				iVar1 = fun7(param_1[2],param_2);
+				iVar1 = iVar1 * 2 + 1;
+			}
+		}
+	}
+	return iVar1;
 }
 
 void secret_phase(void)
