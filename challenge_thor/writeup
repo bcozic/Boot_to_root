@@ -1,0 +1,6 @@
+Ici on peut utiliser le site https://www.tortue-logo.fr/fr/tortue-logo pour afficher chaques lettres (avec une petite modification du fichier pour que les commandes soient reconnue)
+et on obtien "SLASH"
+Dans le fichier turtle un message a la fin nous demande "Can you digest the message?" ce qui signifie que l'on doit passe hacher le message en MD5 (Message Digest 5)
+> echo -n "SLASH" | openssl dgst -md5
+
+"646da671ca01bb5d84dbb5fb2238dc8e"

