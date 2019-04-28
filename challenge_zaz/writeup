@@ -1,5 +1,7 @@
 On trouve un binaire nomme exploit_me sur la session de zaz
 C'est assez explicite
+Le programme est execute en tant que root
+On devrait pouvoir obtenir un shell root a la fin
 Petit desasemblage
 On a juste un main avec un appel a get sur av[1]
 Ok... Simple bufferoverflow:
