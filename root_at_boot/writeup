@@ -1,0 +1,9 @@
+Ici nous allons essayer de passer par le bootloader
+Pour y acceder, au lancement de la vm il suffit d'appuyer sur 'shift'
+On a un prompt boot
+La touche 'tab' nous indique que la seule commande disponible est "live"
+Si on tape "live" la vm boot normalement
+On va donc essayer de remplacer la routine d'init au demarage
+Au lieu de lancer /sbin/init on va tenter de lancer /bin/sh
+> live init=/bin/sh
+Et nous voila root!

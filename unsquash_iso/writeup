@@ -1,0 +1,16 @@
+On ouvre l'ISO
+On recupere le fichier casper/filesystem.squashfs
+Dans une vm, vagrant par exemple on install squashfs
+On unsquashfs le fichier
+On a donc toous les fichiers que l'on va avoir dans notre vm
+Et le plus beau c'est que l'on peut tout lire (on peut aussi tout modifier mais c'est totalement inutile)
+En fouillant un peu on peut trouver un fichier plutot interessant
+/root/.bash_history
+Au milieu de ce fichier on peut trouver ces 2 lignes:
+
+adduser zaz
+646da671ca01bb5d84dbb5fb2238dc8e
+
+Ce qui se trouve etre le mot de passe de zaz
+De la on n'a plus qu'a se connecter au compte de zaz et d'utiliser la faille suid du fichier exploit_me
+(Plus de detail dans exploit_suid_zaz_with_sql_injection/5_challenge_zaz)
